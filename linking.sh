@@ -1,11 +1,16 @@
+#!/bin/sh
+
+# Get the current directory
+CURRENT_DIR=$(pwd)
+
 # Backup current config files
-mv ~/.config ~/.config_backup
-mv ~/.vimrc ~/.vimrc_backup
+mv $HOME/.config $HOME/.config_backup
+mv $HOME/.vimrc $HOME/.vimrc_backup
 
 # Backup current ch layout
 mv /usr/share/X11/xkb/symbols/ch /usr/share/X11/xkb/symbols/ch_backup
 
 # Create symlinks for config files
-ln -nfs ./.vimrc ~/.vimrc
-cp -rs ./.config/ ~/.config/
-ln -nfs ./resources/ch /usr/share/X11/xkb/symbols/ch
+ln -nfs $CURRENT_DIR/.vimrc $HOME/.vimrc
+cp -rs $CURRENT_DIR/.config/ $HOME/.config/
+ln -nfs $CURRENT_DIR/resources/ch /usr/share/X11/xkb/symbols/ch
