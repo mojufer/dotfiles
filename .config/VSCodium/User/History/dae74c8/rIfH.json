@@ -1,0 +1,8 @@
+{
+    "prettier.endOfLine": "auto",
+    "[latex]": {
+        "editor.wordWrap": "on"
+    },
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true
+}

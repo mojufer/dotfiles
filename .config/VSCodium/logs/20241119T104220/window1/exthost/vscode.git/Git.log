@@ -1,0 +1,34 @@
+2024-11-19 10:42:26.344 [info] [main] Log level: Info
+2024-11-19 10:42:26.344 [info] [main] Validating found git in: "git"
+2024-11-19 10:42:26.344 [info] [main] Using git "2.47.0" from "git"
+2024-11-19 10:42:26.344 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-19 10:42:26.344 [info] > git rev-parse --show-toplevel [5ms]
+2024-11-19 10:42:26.344 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2024-11-19 10:42:26.344 [info] > git rev-parse --show-toplevel [1ms]
+2024-11-19 10:42:42.571 [info] > git rev-parse --show-toplevel [2ms]
+2024-11-19 10:42:42.576 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-11-19 10:42:42.585 [info] [Model][openRepository] Opened repository: /home/marco/mojufer/eth/SPCA/spca2024-mjufer-hand-in
+2024-11-19 10:42:42.595 [info] > git config --get commit.template [4ms]
+2024-11-19 10:42:42.602 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-11-19 10:42:42.614 [info] > git status -z -uall [6ms]
+2024-11-19 10:42:42.615 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-11-19 10:42:42.633 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2024-11-19 10:42:42.640 [info] > git config --get commit.template [8ms]
+2024-11-19 10:42:42.641 [info] > git config --local branch.master.vscode-merge-base [2ms]
+2024-11-19 10:42:42.641 [warning] [Git][config] git config failed: Failed to execute git
+2024-11-19 10:42:42.658 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2024-11-19 10:42:42.658 [info] > git reflog master --grep-reflog=branch: Created from *. [13ms]
+2024-11-19 10:42:42.665 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [2ms]
+2024-11-19 10:42:42.665 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-11-19 10:42:42.665 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2024-11-19 10:42:42.690 [info] > git merge-base refs/heads/master refs/remotes/origin/master [19ms]
+2024-11-19 10:42:42.706 [info] > git status -z -uall [5ms]
+2024-11-19 10:42:42.707 [info] > git diff --name-status -z --diff-filter=ADMR a8d66bb63a625dee7b30bc1ac6305292474c64db...refs/remotes/origin/master [12ms]
+2024-11-19 10:42:42.729 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [24ms]
+2024-11-19 10:42:42.890 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [151ms]
+2024-11-19 10:42:43.301 [info] > git check-ignore -v -z --stdin [1ms]
+2024-11-19 10:42:45.891 [info] > git check-ignore -v -z --stdin [2ms]
+2024-11-19 10:42:47.469 [info] > git check-ignore -v -z --stdin [2ms]
+2024-11-19 10:42:51.082 [info] > git show --textconv :assignment7/target165/farm.c [13ms]
+2024-11-19 10:42:51.084 [info] > git ls-files --stage -- /home/marco/mojufer/eth/SPCA/spca2024-mjufer-hand-in/assignment7/target165/farm.c [3ms]
+2024-11-19 10:42:51.096 [info] > git cat-file -s 2a7f54e3eca3232b4980f1e102970aa70fa40d51 [3ms]

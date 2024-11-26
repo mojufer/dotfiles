@@ -1,0 +1,122 @@
+[10:57:41.564][Logger] New log placeholder %WS1% registered for /home/marco/Documents/école/école/TM/tm_article .
+[10:57:41.564][Extension] Initializing LaTeX Workshop.
+[10:57:41.896][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_LATEX: ""
+[10:57:41.898][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_PATH: "docker"
+[10:57:41.965][Server] Creating LaTeX Workshop http and websocket server.
+[10:57:42.191][Format][Bib] Bibtex format config: {"tab":"  ","case":"lowercase","left":"{","right":"}","trailingComma":false,"sort":["key"],"alignOnEqual":true,"sortFields":false,"fieldsOrder":[],"firstEntries":["string","xdata"]}
+[10:57:42.264][Server] Server successfully started: {"address":"127.0.0.1","family":"IPv4","port":44787} .
+[10:57:42.341][Extension] Extension root: /home/marco/.vscode-oss/extensions/james-yu.latex-workshop-10.5.6
+[10:57:42.342][Extension] $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+[10:57:42.342][Extension] $SHELL: /bin/fish
+[10:57:42.357][Extension] $LANG: en_US.UTF-8
+[10:57:42.358][Extension] $LC_ALL: undefined
+[10:57:42.359][Extension] process.platform: linux
+[10:57:42.359][Extension] process.arch: x64
+[10:57:42.359][Extension] vscode.env.appName: VSCodium
+[10:57:42.360][Extension] vscode.env.remoteName: undefined
+[10:57:42.360][Extension] vscode.env.uiKind: 1
+[10:57:42.458][Extension] Trigger characters for intellisense of LaTeX documents: ["\\",",","{","}"]
+[10:57:42.462][Root] Current workspace folders: ["file://%WS1%"]
+[10:57:42.463][Root] Try finding root from magic comment.
+[10:57:42.464][Extension] LaTeX Workshop initialized.
+[10:57:42.465][Root] Try finding root from active editor.
+[10:57:42.468][Root] Found root file from active editor: %WS1%/tm.tex
+[10:57:42.469][Root] Root file changed: from %WS1%/tm.tex to %WS1%/tm.tex, langID latex . Refresh dependencies
+[10:57:42.470][Event] ROOT_FILE_CHANGED: "%WS1%/tm.tex"
+[10:57:42.471][Cacher][Watcher] Reset.
+[10:57:42.472][Cacher][Watcher] Reset.
+[10:57:42.487][Cacher] Adding %WS1%/tm.tex .
+[10:57:42.490][Cacher][Watcher] Watched file://%WS1%/tm.tex with a new .* watcher on %WS1% .
+[10:57:42.491][Event] FILE_WATCHED: "file://%WS1%/tm.tex"
+[10:57:42.496][Cacher] Caching %WS1%/tm.tex .
+[10:57:42.497][Event] ROOT_FILE_SEARCHED
+[10:57:42.633][Server] validOrigin is http://127.0.0.1:44787
+[10:57:42.692][Cacher] Updated inputs of %WS1%/tm.tex .
+[10:57:42.693][Cacher] Parse LaTeX AST: %WS1%/tm.tex .
+[10:57:43.800][Cacher] Parsed LaTeX AST in 1106.80 ms: %WS1%/tm.tex .
+[10:57:43.803][File] Calling kpsewhich to resolve article.cls .
+[10:57:43.938][File] kpsewhich returned with '/usr/share/texmf-dist/tex/latex/base/article.cls'.
+[10:57:44.023][Cacher] Bib %WS1%/tm.bib from %WS1%/tm.tex .
+[10:57:44.024][Intelli][Citation] Parsing .bib entries from %WS1%/tm.bib
+[10:57:44.025][Cacher][Watcher] Watched file://%WS1%/tm.bib with a new .bib watcher on %WS1% .
+[10:57:44.025][Event] FILE_WATCHED: "file://%WS1%/tm.bib"
+[10:57:44.026][Cacher] Updated elements in 224.92 ms: %WS1%/tm.tex .
+[10:57:44.027][Event] FILE_PARSED: "%WS1%/tm.tex"
+[10:57:44.050][Structure] Structure force updated with 0 root sections for %WS1%/tm.tex .
+[10:57:44.051][Event] STRUCTURE_UPDATED
+[10:57:44.067][Intelli][Citation] Parse BibTeX AST from %WS1%/tm.bib .
+[10:57:44.086][Intelli][Citation] Parsed 29 bib entries from %WS1%/tm.bib .
+[10:57:44.087][Event] FILE_PARSED: "%WS1%/tm.bib"
+[10:57:44.092][Structure] Structure force updated with 6 root sections for %WS1%/tm.tex .
+[10:57:44.093][Event] STRUCTURE_UPDATED
+[10:58:04.931][Commander] VIEW command invoked with mode: file:///home/marco/Documents/%C3%A9cole/%C3%A9cole/TM/tm_article/tm.tex.
+[10:58:04.932][Root] Current workspace folders: ["file://%WS1%"]
+[10:58:04.932][Root] Try finding root from magic comment.
+[10:58:04.933][Root] Try finding root from active editor.
+[10:58:04.935][Root] Found root file from active editor: %WS1%/tm.tex
+[10:58:04.936][Root] Keep using the same root file: %WS1%/tm.tex
+[10:58:04.936][Event] ROOT_FILE_SEARCHED
+[10:58:04.936][Event] STRUCTURE_UPDATED
+[10:58:05.124][Viewer][Panel] Internal PDF viewer at http://127.0.0.1:44787/viewer.html?file=pdf..ZmlsZSUzQSUyRiUyRiUyRmhvbWUlMkZtYXJjbyUyRkRvY3VtZW50cyUyRiVDMyVBOWNvbGUlMkYlQzMlQTljb2xlJTJGVE0lMkZ0bV9hcnRpY2xlJTJGdG0ucGRm .
+[10:58:05.125][Cacher][Watcher] Watched file://%WS1%/tm.pdf with a new .pdf watcher on %WS1% .
+[10:58:05.126][Event] FILE_WATCHED: "file://%WS1%/tm.pdf"
+[10:58:05.177][Viewer] Open PDF tab for file://%WS1%/tm.pdf
+[10:58:05.361][Viewer] Handle data type: open
+[10:58:05.444][Server] Preview PDF file: file://%WS1%/tm.pdf
+[10:58:05.621][Viewer] Handle data type: loaded
+[10:58:05.621][Event] VIEWER_PAGE_LOADED
+[10:58:41.515][Extension] onDidSaveTextDocument triggered: file://%WS1%/tm.tex
+[10:58:41.588][Cacher][Watcher] "change" emitted on file://%WS1%/tm.tex.
+[10:58:41.590][Cacher] Caching %WS1%/tm.tex .
+[10:58:41.590][Build] Auto build started detecting the change of a file: %WS1%/tm.tex .
+[10:58:41.590][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/tm.tex"}
+[10:58:41.591][Build] The document of the active editor: file://%WS1%/tm.tex
+[10:58:41.591][Build] The languageId of the document: latex
+[10:58:41.591][Build] Building root file: %WS1%/tm.tex
+[10:58:41.591][Build][Recipe] Build root file %WS1%/tm.tex
+[10:58:41.592][Event] FILE_CHANGED: "file://%WS1%/tm.tex"
+[10:58:41.593][Cacher] Updated inputs of %WS1%/tm.tex .
+[10:58:41.594][Cacher] Parse LaTeX AST: %WS1%/tm.tex .
+[10:58:41.595][Build][Recipe] Preparing to run recipe: latexmk.
+[10:58:41.595][Build][Recipe] Prepared 1 tools.
+[10:58:41.605][Build][Recipe] outDir: %WS1% .
+[10:58:41.608][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/tm"].
+[10:58:41.608][Build] env: {}
+[10:58:41.608][Build] root: %WS1%/tm.tex
+[10:58:41.609][Build] cwd: %WS1%
+[10:58:41.615][Build] LaTeX build process spawned with PID 55711.
+[10:58:42.020][Cacher] Parsed LaTeX AST in 425.76 ms: %WS1%/tm.tex .
+[10:58:42.020][File] kpsewhich cache hit on article.cls: /usr/share/texmf-dist/tex/latex/base/article.cls .
+[10:58:42.053][Cacher] Bib %WS1%/tm.bib from %WS1%/tm.tex .
+[10:58:42.054][Cacher] Updated elements in 33.69 ms: %WS1%/tm.tex .
+[10:58:42.054][Event] FILE_PARSED: "%WS1%/tm.tex"
+[10:58:42.057][Structure] Structure force updated with 6 root sections for %WS1%/tm.tex .
+[10:58:42.058][Event] STRUCTURE_UPDATED
+[10:58:45.111][Parser][BibTeXLog] Logged 0 messages.
+[10:58:45.118][Parser][TexLog] Logged 34 messages.
+[10:58:45.119][Build] Finished a step in recipe with PID 55711.
+[10:58:45.120][Build] Successfully built %WS1%/tm.tex .
+[10:58:45.120][Event] BUILD_DONE
+[10:58:45.120][Viewer] Call refreshExistingViewer: file:///home/marco/Documents/%C3%A9cole/%C3%A9cole/TM/tm_article/tm.pdf .
+[10:58:45.120][Viewer] Refresh PDF viewer: file:///home/marco/Documents/%C3%A9cole/%C3%A9cole/TM/tm_article/tm.pdf
+[10:58:45.124][Cacher] Parsing .fls %WS1%/tm.fls .
+[10:58:45.138][Cacher] Adding %WS1%/logo_fr.png .
+[10:58:45.138][Cacher][Watcher] Watched file://%WS1%/logo_fr.png by the .* watcher.
+[10:58:45.138][Event] FILE_WATCHED: "file://%WS1%/logo_fr.png"
+[10:58:45.142][Cacher] Adding %WS1%/client-server-network.png .
+[10:58:45.142][Cacher][Watcher] Watched file://%WS1%/client-server-network.png by the .* watcher.
+[10:58:45.143][Event] FILE_WATCHED: "file://%WS1%/client-server-network.png"
+[10:58:45.144][Cacher] Adding %WS1%/P2P-network.png .
+[10:58:45.144][Cacher][Watcher] Watched file://%WS1%/P2P-network.png by the .* watcher.
+[10:58:45.145][Event] FILE_WATCHED: "file://%WS1%/P2P-network.png"
+[10:58:45.147][Cacher] Adding %WS1%/clock.png .
+[10:58:45.147][Cacher][Watcher] Watched file://%WS1%/clock.png by the .* watcher.
+[10:58:45.148][Event] FILE_WATCHED: "file://%WS1%/clock.png"
+[10:58:45.151][Cacher] Found .aux %WS1%/tm.aux from .fls %WS1%/tm.fls , parsing.
+[10:58:45.154][Cacher] Parsed .aux %WS1%/tm.aux .
+[10:58:45.154][Cacher] Parsed .fls %WS1%/tm.fls .
+[10:58:45.157][Server] Preview PDF file: file://%WS1%/tm.pdf
+[10:58:45.271][Viewer] Handle data type: loaded
+[10:58:45.271][Event] VIEWER_PAGE_LOADED
+[10:59:15.546][Cacher][Watcher] Reset.
+[10:59:15.547][Cacher][Watcher] Reset.

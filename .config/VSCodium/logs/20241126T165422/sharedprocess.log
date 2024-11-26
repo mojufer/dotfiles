@@ -1,0 +1,2 @@
+2024-11-26 16:54:28.780 [info] Getting Manifest... james-yu.latex-workshop
+2024-11-26 16:54:31.145 [info] Installing extension: james-yu.latex-workshop {"productVersion":{"version":"1.95.3","date":"2024-11-16T01:21:03.577Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/marco/.vscode-oss/extensions/extensions.json","path":"/home/marco/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}

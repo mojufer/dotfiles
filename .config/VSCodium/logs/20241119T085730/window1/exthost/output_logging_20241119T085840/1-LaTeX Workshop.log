@@ -1,0 +1,212 @@
+[08:58:52.438][Logger] New log placeholder %WS1% registered for /home/marco/mojufer/eth/Cybersicherheitspolitik/ex1 .
+[08:58:52.438][Extension] Initializing LaTeX Workshop.
+[08:58:52.762][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_LATEX: ""
+[08:58:52.771][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_PATH: "docker"
+[08:58:52.860][Server] Creating LaTeX Workshop http and websocket server.
+[08:58:53.068][Format][Bib] Bibtex format config: {"tab":"  ","case":"lowercase","left":"{","right":"}","trailingComma":false,"sort":["key"],"alignOnEqual":true,"sortFields":false,"fieldsOrder":[],"firstEntries":["string","xdata"]}
+[08:58:53.146][Server] Server successfully started: {"address":"127.0.0.1","family":"IPv4","port":43783} .
+[08:58:53.308][Extension] Extension root: /home/marco/.vscode-oss/extensions/james-yu.latex-workshop-10.5.6
+[08:58:53.309][Extension] $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+[08:58:53.310][Extension] $SHELL: /bin/fish
+[08:58:53.310][Extension] $LANG: en_US.UTF-8
+[08:58:53.311][Extension] $LC_ALL: undefined
+[08:58:53.311][Extension] process.platform: linux
+[08:58:53.312][Extension] process.arch: x64
+[08:58:53.312][Extension] vscode.env.appName: VSCodium
+[08:58:53.313][Extension] vscode.env.remoteName: undefined
+[08:58:53.313][Extension] vscode.env.uiKind: 1
+[08:58:53.413][Extension] Trigger characters for intellisense of LaTeX documents: ["\\",",","{","}"]
+[08:58:53.416][Root] Current workspace folders: ["file://%WS1%"]
+[08:58:53.417][Root] Try finding root from magic comment.
+[08:58:53.418][Extension] LaTeX Workshop initialized.
+[08:58:53.419][Root] Try finding root from active editor.
+[08:58:53.421][Root] Found root file from active editor: %WS1%/ex1.tex
+[08:58:53.422][Root] Root file changed: from %WS1%/ex1.tex to %WS1%/ex1.tex, langID latex . Refresh dependencies
+[08:58:53.422][Event] ROOT_FILE_CHANGED: "%WS1%/ex1.tex"
+[08:58:53.424][Cacher][Watcher] Reset.
+[08:58:53.424][Cacher][Watcher] Reset.
+[08:58:53.435][Cacher] Adding %WS1%/ex1.tex .
+[08:58:53.438][Cacher][Watcher] Watched file://%WS1%/ex1.tex with a new .* watcher on %WS1% .
+[08:58:53.438][Event] FILE_WATCHED: "file://%WS1%/ex1.tex"
+[08:58:53.441][Cacher] Caching %WS1%/ex1.tex .
+[08:58:53.443][Event] ROOT_FILE_SEARCHED
+[08:58:53.448][Server] validOrigin is http://127.0.0.1:43783
+[08:58:53.505][Cacher] Updated inputs of %WS1%/ex1.tex .
+[08:58:53.505][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[08:58:53.595][Cacher] Parsed LaTeX AST in 89.91 ms: %WS1%/ex1.tex .
+[08:58:53.598][File] Calling kpsewhich to resolve article.cls .
+[08:58:53.782][File] kpsewhich returned with '/usr/share/texmf-dist/tex/latex/base/article.cls'.
+[08:58:53.792][Cacher] Updated elements in 196.38 ms: %WS1%/ex1.tex .
+[08:58:53.794][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[08:58:53.799][Structure] Structure force updated with 0 root sections for %WS1%/ex1.tex .
+[08:58:53.801][Event] STRUCTURE_UPDATED
+[08:58:58.083][Extension] onDidSaveTextDocument triggered: file://%WS1%/ex1.tex
+[08:58:58.158][Cacher][Watcher] "change" emitted on file://%WS1%/ex1.tex.
+[08:58:58.160][Cacher] Caching %WS1%/ex1.tex .
+[08:58:58.162][Build] Auto build started detecting the change of a file: %WS1%/ex1.tex .
+[08:58:58.162][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/ex1.tex"}
+[08:58:58.164][Build] The document of the active editor: file://%WS1%/ex1.tex
+[08:58:58.165][Build] The languageId of the document: latex
+[08:58:58.165][Build] Building root file: %WS1%/ex1.tex
+[08:58:58.166][Build][Recipe] Build root file %WS1%/ex1.tex
+[08:58:58.168][Event] FILE_CHANGED: "file://%WS1%/ex1.tex"
+[08:58:58.173][Cacher] Updated inputs of %WS1%/ex1.tex .
+[08:58:58.174][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[08:58:58.179][Build][Recipe] Preparing to run recipe: latexmk.
+[08:58:58.180][Build][Recipe] Prepared 1 tools.
+[08:58:58.211][Build][Recipe] outDir: %WS1% .
+[08:58:58.220][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[08:58:58.221][Build] env: {}
+[08:58:58.222][Build] root: %WS1%/ex1.tex
+[08:58:58.223][Build] cwd: %WS1%
+[08:58:58.245][Build] LaTeX build process spawned with PID 493411.
+[08:58:58.293][Cacher] Parsed LaTeX AST in 118.31 ms: %WS1%/ex1.tex .
+[08:58:58.295][File] kpsewhich cache hit on article.cls: /usr/share/texmf-dist/tex/latex/base/article.cls .
+[08:58:58.307][Cacher] Updated elements in 12.40 ms: %WS1%/ex1.tex .
+[08:58:58.311][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[08:58:58.315][Structure] Structure force updated with 1 root sections for %WS1%/ex1.tex .
+[08:58:58.316][Event] STRUCTURE_UPDATED
+[08:58:59.681][Parser][TexLog] Logged 7 messages.
+[08:58:59.684][Build] Recipe returns with error code 12/null on PID 493411.
+[08:58:59.685][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[08:58:59.685][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[08:58:59.687][Build] Cleaning auxiliary files and retrying build after toolchain error.
+[08:58:59.689][Cleaner] Clean temporary files command The command is latexmk:["-outdir=%WS1%","-c","%WS1%/ex1.tex"].
+[08:58:59.702][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[08:58:59.702][Build] env: {}
+[08:58:59.703][Build] root: %WS1%/ex1.tex
+[08:58:59.703][Build] cwd: %WS1%
+[08:58:59.713][Build] LaTeX build process spawned with PID 493442.
+[08:58:59.925][Event] AUTO_CLEANED
+[08:59:00.846][Parser][TexLog] Logged 7 messages.
+[08:59:00.848][Build] Recipe returns with error code 12/null on PID 493442.
+[08:59:00.848][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[08:59:00.848][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[08:59:28.069][Event] STRUCTURE_UPDATED
+[08:59:43.010][Event] STRUCTURE_UPDATED
+[08:59:44.036][Extension] onDidSaveTextDocument triggered: file://%WS1%/ex1.tex
+[08:59:44.095][Cacher][Watcher] "change" emitted on file://%WS1%/ex1.tex.
+[08:59:44.102][Cacher] Caching %WS1%/ex1.tex .
+[08:59:44.103][Build] Auto build started detecting the change of a file: %WS1%/ex1.tex .
+[08:59:44.104][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/ex1.tex"}
+[08:59:44.105][Build] The document of the active editor: file://%WS1%/ex1.tex
+[08:59:44.106][Build] The languageId of the document: latex
+[08:59:44.106][Build] Building root file: %WS1%/ex1.tex
+[08:59:44.107][Build][Recipe] Build root file %WS1%/ex1.tex
+[08:59:44.108][Event] FILE_CHANGED: "file://%WS1%/ex1.tex"
+[08:59:44.117][Cacher] Updated inputs of %WS1%/ex1.tex .
+[08:59:44.118][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[08:59:44.121][Build][Recipe] Preparing to run recipe: latexmk.
+[08:59:44.122][Build][Recipe] Prepared 1 tools.
+[08:59:44.126][Build][Recipe] outDir: %WS1% .
+[08:59:44.133][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[08:59:44.134][Build] env: {}
+[08:59:44.134][Build] root: %WS1%/ex1.tex
+[08:59:44.135][Build] cwd: %WS1%
+[08:59:44.153][Build] LaTeX build process spawned with PID 493885.
+[08:59:44.242][Cacher] Parsed LaTeX AST in 123.63 ms: %WS1%/ex1.tex .
+[08:59:44.244][File] kpsewhich cache hit on article.cls: /usr/share/texmf-dist/tex/latex/base/article.cls .
+[08:59:44.253][Cacher] Updated elements in 9.74 ms: %WS1%/ex1.tex .
+[08:59:44.255][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[08:59:44.257][Structure] Structure force updated with 1 root sections for %WS1%/ex1.tex .
+[08:59:44.258][Event] STRUCTURE_UPDATED
+[08:59:44.456][Build] Recipe returns with error code 12/null on PID 493885.
+[08:59:44.456][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[08:59:44.456][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[08:59:44.457][Build] Cleaning auxiliary files and retrying build after toolchain error.
+[08:59:44.459][Cleaner] Clean temporary files command The command is latexmk:["-outdir=%WS1%","-c","%WS1%/ex1.tex"].
+[08:59:44.470][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[08:59:44.471][Build] env: {}
+[08:59:44.471][Build] root: %WS1%/ex1.tex
+[08:59:44.472][Build] cwd: %WS1%
+[08:59:44.482][Build] LaTeX build process spawned with PID 493887.
+[08:59:44.716][Event] AUTO_CLEANED
+[08:59:45.758][Parser][TexLog] Logged 7 messages.
+[08:59:45.759][Build] Recipe returns with error code 12/null on PID 493887.
+[08:59:45.759][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[08:59:45.759][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[09:00:03.394][Extension] onDidSaveTextDocument triggered: file://%WS1%/ex1.tex
+[09:00:03.458][Cacher][Watcher] "change" emitted on file://%WS1%/ex1.tex.
+[09:00:03.468][Cacher] Caching %WS1%/ex1.tex .
+[09:00:03.470][Build] Auto build started detecting the change of a file: %WS1%/ex1.tex .
+[09:00:03.471][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/ex1.tex"}
+[09:00:03.473][Build] The document of the active editor: output:extension-output-James-Yu.latex-workshop-%231-LaTeX Workshop
+[09:00:03.474][Build] The languageId of the document: latex_workshop_log
+[09:00:03.475][Build] Building root file: %WS1%/ex1.tex
+[09:00:03.476][Build][Recipe] Build root file %WS1%/ex1.tex
+[09:00:03.478][Event] FILE_CHANGED: "file://%WS1%/ex1.tex"
+[09:00:03.490][Cacher] Updated inputs of %WS1%/ex1.tex .
+[09:00:03.491][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[09:00:03.497][Build][Recipe] Preparing to run recipe: latexmk.
+[09:00:03.498][Build][Recipe] Prepared 1 tools.
+[09:00:03.503][Build][Recipe] outDir: %WS1% .
+[09:00:03.520][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[09:00:03.520][Build] env: {}
+[09:00:03.521][Build] root: %WS1%/ex1.tex
+[09:00:03.523][Build] cwd: %WS1%
+[09:00:03.546][Build] LaTeX build process spawned with PID 494087.
+[09:00:03.630][Cacher] Parsed LaTeX AST in 138.24 ms: %WS1%/ex1.tex .
+[09:00:03.632][File] kpsewhich cache hit on article.cls: /usr/share/texmf-dist/tex/latex/base/article.cls .
+[09:00:03.641][Cacher] Updated elements in 8.93 ms: %WS1%/ex1.tex .
+[09:00:03.643][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[09:00:03.646][Structure] Structure force updated with 1 root sections for %WS1%/ex1.tex .
+[09:00:03.648][Event] STRUCTURE_UPDATED
+[09:00:03.908][Build] Recipe returns with error code 12/null on PID 494087.
+[09:00:03.909][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[09:00:03.909][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[09:00:03.910][Build] Cleaning auxiliary files and retrying build after toolchain error.
+[09:00:03.910][Cleaner] Clean temporary files command The command is latexmk:["-outdir=%WS1%","-c","%WS1%/ex1.tex"].
+[09:00:03.920][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[09:00:03.921][Build] env: {}
+[09:00:03.921][Build] root: %WS1%/ex1.tex
+[09:00:03.922][Build] cwd: %WS1%
+[09:00:03.931][Build] LaTeX build process spawned with PID 494089.
+[09:00:04.151][Event] AUTO_CLEANED
+[09:00:05.102][Parser][TexLog] Logged 7 messages.
+[09:00:05.104][Build] Recipe returns with error code 12/null on PID 494089.
+[09:00:05.104][Build] Does the executable exist? $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl, $Path: undefined, $SHELL: /bin/fish
+[09:00:05.104][Build] Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+
+[09:00:13.009][Commander] VIEW command invoked with mode: file://%WS1%/ex1.tex.
+[09:00:13.010][Commander] Active document is not a TeX file.
+[09:00:15.148][Commander] VIEW command invoked with mode: file://%WS1%/ex1.tex.
+[09:00:15.149][Commander] Active document is not a TeX file.
+[09:00:16.255][Commander] VIEW command invoked with mode: file://%WS1%/ex1.tex.
+[09:00:16.255][Commander] Active document is not a TeX file.
+[09:01:48.572][Cacher][Watcher] Reset.
+[09:01:48.573][Cacher][Watcher] Reset.

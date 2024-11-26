@@ -1,0 +1,13 @@
+2024-11-26 16:54:44.374 [info] Extension host with pid 125907 started
+2024-11-26 16:54:44.541 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-26 16:54:44.569 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2024-11-26 16:54:44.586 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2024-11-26 16:54:45.271 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-11-26 16:54:45.359 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-26 16:54:45.387 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2024-11-26 16:54:45.397 [info] Eager extensions activated
+2024-11-26 16:54:45.423 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-26 16:54:45.429 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-26 16:54:45.449 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: false, activationEvent: 'onStartupFinished'
+2024-11-26 16:54:47.415 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-26 16:54:47.425 [info] Extension host with pid 125907 exiting with code 0

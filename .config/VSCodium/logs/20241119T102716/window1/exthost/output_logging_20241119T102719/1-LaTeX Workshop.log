@@ -1,0 +1,103 @@
+[10:27:19.325][Logger] New log placeholder %WS1% registered for /home/marco/mojufer/eth/Cybersicherheitspolitik/ex1 .
+[10:27:19.325][Extension] Initializing LaTeX Workshop.
+[10:27:19.538][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_LATEX: ""
+[10:27:19.539][Build][Recipe] Set $LATEXWORKSHOP_DOCKER_PATH: "docker"
+[10:27:19.588][Server] Creating LaTeX Workshop http and websocket server.
+[10:27:19.741][Format][Bib] Bibtex format config: {"tab":"  ","case":"lowercase","left":"{","right":"}","trailingComma":false,"sort":["key"],"alignOnEqual":true,"sortFields":false,"fieldsOrder":[],"firstEntries":["string","xdata"]}
+[10:27:19.818][Server] Server successfully started: {"address":"127.0.0.1","family":"IPv4","port":45409} .
+[10:27:19.852][Extension] Extension root: /home/marco/.vscode-oss/extensions/james-yu.latex-workshop-10.5.6
+[10:27:19.852][Extension] $PATH: /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+[10:27:19.852][Extension] $SHELL: /bin/fish
+[10:27:19.852][Extension] $LANG: en_US.UTF-8
+[10:27:19.853][Extension] $LC_ALL: undefined
+[10:27:19.853][Extension] process.platform: linux
+[10:27:19.853][Extension] process.arch: x64
+[10:27:19.854][Extension] vscode.env.appName: VSCodium
+[10:27:19.854][Extension] vscode.env.remoteName: undefined
+[10:27:19.854][Extension] vscode.env.uiKind: 1
+[10:27:19.910][Extension] Trigger characters for intellisense of LaTeX documents: ["\\",",","{","}"]
+[10:27:19.913][Root] Current workspace folders: ["file://%WS1%"]
+[10:27:19.914][Root] Try finding root from magic comment.
+[10:27:19.915][Extension] LaTeX Workshop initialized.
+[10:27:19.916][Root] Try finding root from active editor.
+[10:27:19.917][Root] Found root file from active editor: %WS1%/ex1.tex
+[10:27:19.917][Root] Root file changed: from %WS1%/ex1.tex to %WS1%/ex1.tex, langID latex . Refresh dependencies
+[10:27:19.917][Event] ROOT_FILE_CHANGED: "%WS1%/ex1.tex"
+[10:27:19.918][Cacher][Watcher] Reset.
+[10:27:19.918][Cacher][Watcher] Reset.
+[10:27:19.923][Cacher] Adding %WS1%/ex1.tex .
+[10:27:19.925][Cacher][Watcher] Watched file://%WS1%/ex1.tex with a new .* watcher on %WS1% .
+[10:27:19.926][Event] FILE_WATCHED: "file://%WS1%/ex1.tex"
+[10:27:19.928][Cacher] Caching %WS1%/ex1.tex .
+[10:27:19.929][Event] ROOT_FILE_SEARCHED
+[10:27:19.938][Server] validOrigin is http://127.0.0.1:45409
+[10:27:19.958][Cacher] Updated inputs of %WS1%/ex1.tex .
+[10:27:19.958][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[10:27:20.113][Cacher] Parsed LaTeX AST in 154.17 ms: %WS1%/ex1.tex .
+[10:27:20.115][File] Calling kpsewhich to resolve article.cls .
+[10:27:20.241][File] kpsewhich returned with '/usr/share/texmf-dist/tex/latex/base/article.cls'.
+[10:27:20.247][Cacher] Updated elements in 133.72 ms: %WS1%/ex1.tex .
+[10:27:20.249][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[10:27:20.256][Structure] Structure force updated with 0 root sections for %WS1%/ex1.tex .
+[10:27:20.257][Event] STRUCTURE_UPDATED
+[10:27:20.359][Cacher] Parsing .fls %WS1%/ex1.fls .
+[10:27:20.460][Cacher] Found .aux %WS1%/ex1.aux from .fls %WS1%/ex1.fls , parsing.
+[10:27:20.463][Cacher] Parsed .aux %WS1%/ex1.aux .
+[10:27:20.463][Cacher] Parsed .fls %WS1%/ex1.fls .
+[10:27:23.725][Extension] onDidSaveTextDocument triggered: file://%WS1%/ex1.tex
+[10:27:23.798][Cacher][Watcher] "change" emitted on file://%WS1%/ex1.tex.
+[10:27:23.799][Cacher] Caching %WS1%/ex1.tex .
+[10:27:23.800][Build] Auto build started detecting the change of a file: %WS1%/ex1.tex .
+[10:27:23.801][Event] AUTO_BUILD_INITIATED: {"type":"onFileChange","file":"%WS1%/ex1.tex"}
+[10:27:23.802][Build] The document of the active editor: file://%WS1%/ex1.tex
+[10:27:23.802][Build] The languageId of the document: latex
+[10:27:23.803][Build] Building root file: %WS1%/ex1.tex
+[10:27:23.803][Build][Recipe] Build root file %WS1%/ex1.tex
+[10:27:23.804][Event] FILE_CHANGED: "file://%WS1%/ex1.tex"
+[10:27:23.808][Cacher] Updated inputs of %WS1%/ex1.tex .
+[10:27:23.809][Cacher] Parse LaTeX AST: %WS1%/ex1.tex .
+[10:27:23.811][Build][Recipe] Preparing to run recipe: latexmk.
+[10:27:23.812][Build][Recipe] Prepared 1 tools.
+[10:27:23.829][Build][Recipe] outDir: %WS1% .
+[10:27:23.854][Build] Recipe step 1 The command is latexmk:["-synctex=1","-interaction=nonstopmode","-file-line-error","-pdf","-outdir=%WS1%","%WS1%/ex1"].
+[10:27:23.855][Build] env: {}
+[10:27:23.855][Build] root: %WS1%/ex1.tex
+[10:27:23.856][Build] cwd: %WS1%
+[10:27:23.866][Build] LaTeX build process spawned with PID 36622.
+[10:27:23.877][Cacher] Parsed LaTeX AST in 68.08 ms: %WS1%/ex1.tex .
+[10:27:23.879][File] kpsewhich cache hit on article.cls: /usr/share/texmf-dist/tex/latex/base/article.cls .
+[10:27:23.884][Cacher] Updated elements in 6.17 ms: %WS1%/ex1.tex .
+[10:27:23.886][Event] FILE_PARSED: "%WS1%/ex1.tex"
+[10:27:23.887][Structure] Structure force updated with 1 root sections for %WS1%/ex1.tex .
+[10:27:23.888][Event] STRUCTURE_UPDATED
+[10:27:25.036][Parser][TexLog] Logged 2 messages.
+[10:27:25.038][Build] Finished a step in recipe with PID 36622.
+[10:27:25.039][Build] Successfully built %WS1%/ex1.tex .
+[10:27:25.040][Event] BUILD_DONE
+[10:27:25.041][Viewer] Call refreshExistingViewer: file://%WS1%/ex1.pdf .
+[10:27:25.042][Viewer] Not found PDF viewers to refresh: file://%WS1%/ex1.pdf
+[10:27:25.061][Cacher] Parsing .fls %WS1%/ex1.fls .
+[10:27:25.097][Cacher] Found .aux %WS1%/ex1.aux from .fls %WS1%/ex1.fls , parsing.
+[10:27:25.109][Cacher] Parsed .aux %WS1%/ex1.aux .
+[10:27:25.110][Cacher] Parsed .fls %WS1%/ex1.fls .
+[10:27:31.655][Commander] VIEW command invoked with mode: file://%WS1%/ex1.tex.
+[10:27:31.655][Root] Current workspace folders: ["file://%WS1%"]
+[10:27:31.656][Root] Try finding root from magic comment.
+[10:27:31.657][Root] Try finding root from active editor.
+[10:27:31.658][Root] Found root file from active editor: %WS1%/ex1.tex
+[10:27:31.659][Root] Keep using the same root file: %WS1%/ex1.tex
+[10:27:31.660][Event] ROOT_FILE_SEARCHED
+[10:27:31.660][Event] STRUCTURE_UPDATED
+[10:27:31.839][Viewer][Panel] Internal PDF viewer at http://127.0.0.1:45409/viewer.html?file=pdf..ZmlsZSUzQSUyRiUyRiUyRmhvbWUlMkZtYXJjbyUyRm1vanVmZXIlMkZldGglMkZDeWJlcnNpY2hlcmhlaXRzcG9saXRpayUyRmV4MSUyRmV4MS5wZGY .
+[10:27:31.843][Cacher][Watcher] Watched file://%WS1%/ex1.pdf with a new .pdf watcher on %WS1% .
+[10:27:31.843][Event] FILE_WATCHED: "file://%WS1%/ex1.pdf"
+[10:27:31.930][Viewer] Open PDF tab for file://%WS1%/ex1.pdf
+[10:27:32.313][Viewer] Handle data type: open
+[10:27:32.489][Server] Preview PDF file: file://%WS1%/ex1.pdf
+[10:27:32.793][Viewer] Handle data type: loaded
+[10:27:32.793][Event] VIEWER_PAGE_LOADED
+[10:29:45.113][Event] STRUCTURE_UPDATED
+[10:29:54.153][Event] STRUCTURE_UPDATED
+[10:32:12.341][Event] STRUCTURE_UPDATED
+[10:32:17.338][Cacher][Watcher] Reset.
+[10:32:17.338][Cacher][Watcher] Reset.

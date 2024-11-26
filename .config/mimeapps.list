@@ -1,0 +1,23 @@
+
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+text/html=brave-browser.desktop
+image/png=imv.desktop
+image/jpeg=imv.desktop
+video/ogg=vlc.desktop
+video/x-msvideo=vlc.desktop
+video/quicktime=vlc.desktop
+video/webm=vlc.desktop
+video/x-flv=vlc.desktop
+video/mp4=vlc.desktop
+audio/mpeg=vlc.desktop
+audio/mp4=vlc.desktop
+audio/mp3=vlc.desktop
+text/plain=codium.desktop
+text/x-markdown=codium.desktop
+text/x-java=codium.desktop
+text/x-empty=codium-desktop
+text/x-tex=codium.desktop
+text/x-ruby=codium.desktop
+text/x-python=codium.desktop
+text/x-readme=codium.desktop

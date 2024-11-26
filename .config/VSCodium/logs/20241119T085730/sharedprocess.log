@@ -1,0 +1,12 @@
+2024-11-19 08:58:11.087 [info] Getting Manifest... james-yu.latex-workshop
+2024-11-19 08:58:11.335 [info] Installing extension: james-yu.latex-workshop {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/marco/.vscode-oss/extensions/extensions.json","path":"/home/marco/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-16T01:21:03.577Z"}}
+2024-11-19 08:58:19.328 [info] Extracted extension to file:///home/marco/.vscode-oss/extensions/james-yu.latex-workshop-10.5.6: james-yu.latex-workshop
+2024-11-19 08:58:19.346 [info] Renamed to /home/marco/.vscode-oss/extensions/james-yu.latex-workshop-10.5.6
+2024-11-19 08:58:19.415 [info] Extension installed successfully: james-yu.latex-workshop vscode-userdata:/home/marco/.vscode-oss/extensions/extensions.json
+2024-11-19 08:58:19.477 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/marco/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/marco/.vscode-oss/extensions/extensions.json.vsctmp'
+    at um.create (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44274)
+    at Ei (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:44381)
+    at Fn.toFileSystemProviderError (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:28542)
+    at Fn.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:20509)
+    at async Zl.stat (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:101684)
+    at async Gl.onDidFilesChange (file:///opt/vscodium-bin/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:79904)
