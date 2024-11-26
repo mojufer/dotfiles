@@ -8,9 +8,9 @@ mv $HOME/.config $HOME/.config_backup
 mv $HOME/.vimrc $HOME/.vimrc_backup
 
 # Backup current ch layout
-mv /usr/share/X11/xkb/symbols/ch /usr/share/X11/xkb/symbols/ch_backup
+sudo mv /usr/share/X11/xkb/symbols/ch /usr/share/X11/xkb/symbols/ch_backup
 
 # Create symlinks for config files
 ln -nfs $CURRENT_DIR/.vimrc $HOME/.vimrc
 cp -rs $CURRENT_DIR/.config/ $HOME/.config/
-ln -nfs $CURRENT_DIR/resources/ch /usr/share/X11/xkb/symbols/ch
+sudo ln -nfs $CURRENT_DIR/resources/ch /usr/share/X11/xkb/symbols/ch
