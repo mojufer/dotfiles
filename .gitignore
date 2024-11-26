@@ -1,0 +1,8 @@
+!.config/*
+!.vimrc
+!.gitignore
+
+.config/Signal/
+.config/BraveSoftware/
+.config/discord/
+.config/Nextcloud/
