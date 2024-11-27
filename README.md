@@ -5,10 +5,11 @@ Please report any published dotfiles which should be published for security reas
 # Dependencies
 **Not complete yet**
 ## Arch Linux
-From a base Arch install, you need to install following packages.
+From a base Arch install with yay installed, you need to install following packages.
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar whitesur-gtk-theme whitesur-icon-theme wmenu
+sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar wmenu
+yay -S whitesur-gtk-theme whitesur-icon-theme
 ```
 
 # Apps I use
@@ -17,8 +18,8 @@ Here are some apps I use which aren't required for this config to work but are n
 ## Arch Linux
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree wdisplays zathura discord blueman
-yay -S brave-bin free42 vlc-git vscodium-bin sway-interactive-screenshot
+sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree zathura discord blueman
+yay -S brave-bin free42 vlc-git vscodium-bin sway-interactive-screenshot wdisplays
 ```
 
 # Installation
