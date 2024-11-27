@@ -22,7 +22,7 @@ set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | 
 set $browser brave
 set $firefox firefox
 set $files thunar
-set $screenlock swaylock -f --image /usr/share/backgrounds/sway/lumieres.jpg
+set $screenlock swaylock -f --image /usr/share/backgrounds/sway/wallpaper.jpg
 set $screenshot sway-interactive-screenshot -s region --save-dir /home/marco/Pictures/Screenshots/
 set $notification-menu swaync-client -t -sw
 
@@ -37,7 +37,7 @@ gaps outer 5
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/marco/Pictures/Wallpaper/praying_knight1.jpg fill
+output * bg /usr/share/backgrounds/sway/wallpaper.jpg fill
 #
 # Example configuration:
 #
