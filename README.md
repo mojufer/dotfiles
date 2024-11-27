@@ -7,6 +7,7 @@ Please report any published dotfiles which should be published for security reas
 Clone the repository on your system : 
 ```
 git clone https://github.com/mojufer/dotfiles.git`
+cd dotfiles
 ```
 
 Then execute the *linking.sh* script to link the dotfiles from this repo to the location where they will be used by your system. **The script is not done yet, use it at your own risk !**.
