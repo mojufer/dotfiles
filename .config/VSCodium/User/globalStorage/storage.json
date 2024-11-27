@@ -7,7 +7,7 @@
         "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1732636482949"
+                "backupFolder": "1732692209869"
             }
         ]
     },
@@ -19,7 +19,8 @@
         },
         "emptyWindows": {
             "1732636462566": "__default__profile__",
-            "1732636482949": "__default__profile__"
+            "1732636482949": "__default__profile__",
+            "1732692209869": "__default__profile__"
         }
     },
     "lastKnownMenubarData": {
@@ -1702,7 +1703,7 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/marco/.config/VSCodium/Backups/1732636482949",
+            "backupPath": "/home/marco/.config/VSCodium/Backups/1732692209869",
             "uiState": {
                 "mode": 0,
                 "x": 965,

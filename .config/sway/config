@@ -118,6 +118,9 @@ default_border normal 2
 titlebar_border_thickness 2
 #titlebar_padding 5
 
+# Auto tiling
+# exec autotiling
+
 
 
 
@@ -143,9 +146,9 @@ titlebar_border_thickness 2
 
     # Start web browser
     bindsym $mod+b exec $browser
-    bindsym $mod+f exec $firefox
 
     # Start file manager
+    bindsym $mod+f exec $files
     bindsym $mod+n exec $files
 
     # Lock screen
