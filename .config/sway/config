@@ -37,7 +37,7 @@ gaps outer 5
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/lumieres.jpg fill
+output * bg /home/marco/Pictures/Wallpaper/praying_knight1.jpg fill
 #
 # Example configuration:
 #
