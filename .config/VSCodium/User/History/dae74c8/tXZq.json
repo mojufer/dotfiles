@@ -1,7 +1,0 @@
-{
-    "prettier.endOfLine": "auto",
-    "[latex]": {
-        "editor.wordWrap": "on"
-    },
-    "vim.useSystemClipboard": true
-}

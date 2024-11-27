@@ -1,6 +1,0 @@
-{
-    "prettier.endOfLine": "auto",
-    "[latex]": {
-        "editor.wordWrap": "on"
-    }
-}
