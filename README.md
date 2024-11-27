@@ -34,3 +34,12 @@ This will create links, which means that when there is updates and you do ```git
 ```
 sh linking.sh
 ```
+
+## Wallpaper
+To avoid errors in the sway config, you have to set a wallpaper.  
+Do this by using the *wallpaper* utility present in *software/*
+```
+wallpaper --init # DO THIS ONLY IF YOU UNDERSTAND WHAT IT DOES
+wallpaper path_to_wallpaper_file
+```
+Then reload the sway config (Super+Shift+C) and it should work.

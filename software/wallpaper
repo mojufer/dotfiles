@@ -26,7 +26,7 @@ elif [ "$1" == "--get-wallpaper-name" ]; then
 else
   IMAGE="$1"
   EXTENSION="${IMAGE##*.}"
-  rm /usr/share/backgrounds/sway/wallpaper.*
+  rm --force /usr/share/backgrounds/sway/wallpaper.*
   cp $CURRENT_DIR/$IMAGE /usr/share/backgrounds/sway/wallpaper.$EXTENSION
   notify-send --urgency=normal "Wallpaper set"
 fi
