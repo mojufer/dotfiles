@@ -1,7 +1,25 @@
 # dotfiles
-Dotfiles for my Linux setup
+Dotfiles for my swaywm setup
 Please report any published dotfiles which should be published for security reason.
 
+# Dependencies
+**Not complete yet**
+## Arch Linux
+From a base Arch install, you need to install following packages.
+If some packages can't be installed with pacman, they are in the AUR
+```
+sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar whitesur-gtk-theme whitesur-icon-theme wmenu
+```
+
+# Apps I use
+Here are some apps I use which aren't required for this config to work but are nice to have (if don't use some of them, you may have to modify the defaults apps and keybindings in ```.config/sway/config``` and remove some execution in ```.config/sway/config```)
+
+## Arch Linux
+If some packages can't be installed with pacman, they are in the AUR
+```
+sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree wdisplays zathura discord blueman
+yay -S brave-bin free42 vlc-git vscodium-bin sway-interactive-screenshot
+```
 
 # Installation
 Clone the repository on your system : 
