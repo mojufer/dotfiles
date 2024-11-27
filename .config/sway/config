@@ -22,7 +22,7 @@ set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | 
 set $browser brave
 set $firefox firefox
 set $files thunar
-set $wallpaper /usr/share/backgrounds/sway/wallpaper.jpg
+set $wallpaper `wallpaper --get-wallpaper-name`
 set $screenlock swaylock -f --image $wallpaper
 set $screenshot sway-interactive-screenshot -s region --save-dir /home/marco/Pictures/Screenshots/
 set $notification-menu swaync-client -t -sw

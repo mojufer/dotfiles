@@ -1,0 +1,32 @@
+#!/bin/sh
+
+init() {
+  echo "Initialisation"
+  sudo chown $USER /usr/share/backgrounds/sway/
+}
+
+helpFunction() {
+  echo "Doesn't work like that"
+}
+
+getWallpaperName() {
+  NAME="$(ls /usr/share/backgrounds/sway/wallpaper.*)"
+  echo $NAME
+}
+
+CURRENT_DIR=$(pwd)
+USER=$(whoami)
+
+if [ "$1" == "--help" ]; then
+  helpFunction
+elif [ "$1" == "--init" ]; then
+  init
+elif [ "$1" == "--get-wallpaper-name" ]; then
+  getWallpaperName
+else
+  IMAGE="$1"
+  EXTENSION="${IMAGE##*.}"
+  rm /usr/share/backgrounds/sway/wallpaper.*
+  cp $CURRENT_DIR/$IMAGE /usr/share/backgrounds/sway/wallpaper.$EXTENSION
+  notify-send --urgency=normal "Wallpaper set"
+fi
