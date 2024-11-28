@@ -18,7 +18,7 @@ Here are some apps I use which aren't required for this config to work but are n
 ## Arch Linux
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree zathura discord blueman
+sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree zathura discord blueman fastfetch
 yay -S brave-bin free42 vlc-git vscodium-bin sway-interactive-screenshot wdisplays
 ```
 
