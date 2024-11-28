@@ -17,7 +17,8 @@ set $right l
 set $term kitty
 # Your preferred application launcher
 #set $menu wmenu-run
-set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | xargs swaymsg exec --
+# set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | xargs swaymsg exec --
+set $menu wofi --show run
 
 set $browser brave
 set $firefox firefox
