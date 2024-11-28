@@ -34,7 +34,7 @@ font pango: JetBrainsMono Nerd Font 10
 
 # Gaps
 gaps inner 8
-gaps outer 5
+gaps outer 2
 
 ### Output configuration
 #
