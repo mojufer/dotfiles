@@ -27,6 +27,7 @@ set $wallpaper `wallpaper --get-wallpaper-name`
 set $screenlock swaylock -f --image $wallpaper
 set $screenshot sway-interactive-screenshot -s region --save-dir /home/marco/Pictures/Screenshots/
 set $notification-menu swaync-client -t -sw
+set $suspend $screenlock & systemctl suspend
 
 
 # Font
@@ -34,7 +35,7 @@ font pango: JetBrainsMono Nerd Font 10
 
 # Gaps
 gaps inner 8
-gaps outer 2
+gaps outer 1
 
 ### Output configuration
 #
@@ -52,9 +53,10 @@ output * bg $wallpaper fill
 # Example configuration:
 #
 exec swayidle -w \
-	 timeout 300 '$screenlock'\
-	 timeout 450 'systemctl suspend' \
-         before-sleep '$screenlock'
+	 timeout 600 '$screenlock'
+
+#	  timeout 1200 'systemctl suspend' \
+#          before-sleep '$screenlock'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -73,6 +75,13 @@ exec nextcloud --background
 
 # Notifications
 exec swaync
+
+# Screen capture
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+# exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# Gnome authentication agent
+# exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 ### Input configuration
 #
@@ -158,6 +167,9 @@ titlebar_border_thickness 2
 
     # Notifications menu
     bindsym $mod+m exec $notification-menu
+
+    # suspend
+    bindsym $mod+Shift+s exec $suspend
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -284,6 +296,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+

@@ -8,7 +8,7 @@ Please report any published dotfiles which should be published for security reas
 From a base Arch install with yay installed, you need to install following packages.
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar wmenu
+sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar wmenu polkit-gnome
 yay -S whitesur-gtk-theme whitesur-icon-theme
 ```
 
