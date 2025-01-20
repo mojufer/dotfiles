@@ -15,6 +15,8 @@ yay -S whitesur-gtk-theme whitesur-icon-theme
 # Apps I use
 Here are some apps I use which aren't required for this config to work but are nice to have (if don't use some of them, you may have to modify the defaults apps and keybindings in ```.config/sway/config``` and remove some execution in ```.config/sway/config```)
 
+For my fellow Swiss people, here is a fantastic CLI client for the SBB API : [cff-cli](https://github.com/goeil/cff-cli)
+
 ## Arch Linux
 If some packages can't be installed with pacman, they are in the AUR
 ```
