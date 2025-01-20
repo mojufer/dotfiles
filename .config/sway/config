@@ -53,10 +53,9 @@ output * bg $wallpaper fill
 # Example configuration:
 #
 exec swayidle -w \
-	 timeout 600 '$screenlock'
-
-#	  timeout 1200 'systemctl suspend' \
-#          before-sleep '$screenlock'
+	 timeout 600 '$screenlock'\
+	  timeout 10000 'systemctl suspend' \
+         before-sleep '$screenlock'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -135,7 +134,7 @@ titlebar_border_thickness 2
 
 
 
-### Key bindings
+### Keybindings
 #
 # Basics:
 #
@@ -157,9 +156,9 @@ titlebar_border_thickness 2
 
     # Start web browser
     bindsym $mod+b exec $browser
+    bindsym $mod+f exec $firefox
 
     # Start file manager
-    bindsym $mod+f exec $files
     bindsym $mod+n exec $files
 
     # Lock screen
