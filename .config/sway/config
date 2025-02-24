@@ -25,7 +25,7 @@ set $firefox firefox
 set $files thunar
 set $wallpaper `wallpaper --get-wallpaper-name`
 set $screenlock swaylock -f --image $wallpaper
-set $screenshot sway-interactive-screenshot -s region --save-dir /home/marco/Pictures/Screenshots/
+set $screenshot sway-interactive-screenshot -s region --save-dir ~/Pictures/Screenshots/
 set $notification-menu swaync-client -t -sw
 set $suspend $screenlock & systemctl suspend
 
