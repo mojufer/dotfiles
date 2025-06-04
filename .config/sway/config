@@ -20,7 +20,8 @@ set $term kitty
 # set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | xargs swaymsg exec --
 set $menu wofi --show run
 
-set $browser brave
+# set $browser brave
+set $browser librewolf
 set $firefox firefox
 set $files thunar
 set $wallpaper `wallpaper --get-wallpaper-name`
@@ -69,9 +70,6 @@ bindswitch --reload --locked lid:off output $laptop enable
 # Night mode
 exec "gammastep -l 46.94700000:7.44500000 -t 6500:3500"
 
-# Nextcloud
-exec nextcloud --background
-
 # Notifications
 exec swaync
 
@@ -80,7 +78,14 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 # exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Gnome authentication agent
-# exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec_always --no-startup-id bash -c 'eval $(gnome-keyring-daemon --start) && export SSH_AUTH_SOCK && export GPG_AGENT_INFO && export GNOME_KEYRING_CONTROL && export GNOME_KEYRING_PID'
+
+
+# Nextcloud
+# exec nextcloud --background
+
+
 
 ### Input configuration
 #
