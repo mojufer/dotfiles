@@ -1,0 +1,2 @@
+#!/bin/sh
+echo 150 > /sys/devices/pci0000:00/0000:00:1f.4/i2c-6/6-002c/rmi4-00/rmi4-00.fn03/serio2/sensitivity ; echo 100 > /sys/devices/pci0000:00/0000:00:1f.4/i2c-6/6-002c/rmi4-00/rmi4-00.fn03/serio2/speed
