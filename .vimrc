@@ -10,10 +10,71 @@ syntax on
 
 
 " Indentation
-set tabstop=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 " set expendtab " replace tabs with spaces
 
 
 " Clipboard integration
 set clipboard=unnamedplus
+
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-sensible'
+Plug 'morhetz/gruvbox'
+" Plug 'lervag/vimtex'
+Plug 'neoclide/coc.nvim' , {'branch': 'release'}
+
+call plug#end()
+
+
+" Colors
+colorscheme gruvbox
+set background=dark
+
+
+" Colors
+
+" enable true color support
+if (has("termguicolors"))
+		set termguicolors
+endif
+
+colorscheme gruvbox
+
+" make the background transparent
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NormalNC ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+highlight VertSplit ctermbg=NONE guibg=NONE
+highlight StatusLine ctermbg=NONE guibg=NONE
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight Folded ctermbg=NONE guibg=NONE
+highlight Pmenu ctermbg=NONE guibg=NONE
+
+
+" LaTeX
+augroup latex_compile_and_view
+  autocmd!
+  autocmd BufWritePost *.tex call CompileAndView()
+augroup END
+
+function! CompileAndView()
+  " Compile the current LaTeX file silently
+  silent execute '!pdflatex -interaction=nonstopmode -halt-on-error % > /dev/null 2>&1'
+endfunction
+
+
+" Autocompletion
+" Use <Tab> and <S-Tab> to navigate popup menu
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Use <CR> to confirm completion if popup menu is visible
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
+inoremap <silent><expr> <C-Space> coc#refresh()
+

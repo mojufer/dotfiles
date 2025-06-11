@@ -2,6 +2,12 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Autostart sway
+set -x XDG_SESSION_TYPE wayland
+set -x XDG_CURRENT_DESKTOP sway
+set -x MOZ_ENABLE_WAYLAND 1
+set -x QT_QPA_PLATFORM wayland
+
 # Aliases
 alias brave="brave --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias hssh="ssh -i /home/marco/.ssh/id_hezner_marco marco@188.245.36.178"

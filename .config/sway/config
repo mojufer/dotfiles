@@ -83,7 +83,7 @@ exec_always --no-startup-id bash -c 'eval $(gnome-keyring-daemon --start) && exp
 
 
 # Nextcloud
-# exec nextcloud --background
+exec nextcloud --background
 
 
 
