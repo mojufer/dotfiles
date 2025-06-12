@@ -34,7 +34,7 @@ systemctl enable --now auto-cpufreq
 ## Charge treshold
 To put the charge thresholds to all the batteries of a laptop to only start charging when the battery is at 40% and stop at 80%, run following commands :
 ```
-echo 40 | sudo tee /sys/class/power_supply/BAT*/charge_start_threshold
+echo 40 | sudo tee /sys/class/power_supply/BAT*/charge_start_threshold &
 echo 80 | sudo tee /sys/class/power_supply/BAT*/charge_stop_threshold
 ```
 
@@ -44,11 +44,11 @@ We use vim-plug to make the plugins stated in .vimrc work
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-Add the plugins you want in .vimrc and then to ```:PlugInstall``` in vim.
+Add the plugins you want in .vimrc and then do ```:PlugInstall``` in vim.
 
 
 # Pretty decrypt screen / boot screen  with plymouth
-I use the [thinkdar](https://github.com/gevera/plymouth_themes/tree/master/thinkpad/thinkdar) theme with every prompt opacity set to 0.
+I use the [thinkdar](https://github.com/gevera/plymouth_themes/tree/master/thinkpad/thinkdar) theme with every prompt opacity set to 0. This just hides the password prompt because I'm too lazy to make it pretty. If someone makes it pretty, you're welcome to share it.
 ```
 sudo pacman -S plymouth &
 sudo plymouth-set-default-theme -R thinkdar
