@@ -1,5 +1,5 @@
 # dotfiles
-Dotfiles for my swaywm setup.
+Dotfiles for my swaywm setup.  
 **Please report any published dotfiles which shouldn't be published for security or privacy reasons.**
 
 # Dependencies
