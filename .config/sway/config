@@ -32,7 +32,9 @@ set $suspend $screenlock & systemctl suspend
 
 
 # Font
-font pango: JetBrainsMono Nerd Font 10
+# font pango: JetBrainsMono Nerd Font 10
+font pango: JetBrains Mono Nerd Font, Noto Color Emoji, Symbola, DejaVu Sans Mono 10
+
 
 # Gaps
 gaps inner 8
