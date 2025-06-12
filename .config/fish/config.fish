@@ -22,5 +22,7 @@ alias sbb="cff"
 alias neofetch="fastfetch"
 alias nerd-font-installer='bash -c  "$(curl -fsSL https://raw.githubusercontent.com/officialrajdeepsingh/nerd-fonts-installer/main/install.sh)"'
 alias plan="zathura ~/mojufer/eth/Revisions/plan.pdf"
+alias powerstats="auto-cpufreq --stats"
+alias sl="ls"
 
 thefuck --alias | source
