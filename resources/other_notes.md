@@ -15,7 +15,7 @@ In seahorse, change the password to blank.
 
 
 # OBS studio
-If someone get to make the screen capture and virtual camera work great on sway / wayland, please give me a tip  
+If someone gets to make the screen capture and virtual camera work great on sway / wayland, please give me a tip  
 
 It should work with this :
 ```
@@ -33,11 +33,10 @@ systemctl enable --now auto-cpufreq
 
 ## Charge treshold
 To put the charge thresholds to all the batteries of a laptop to only start charging when the battery is at 40% and stop at 80%, run following commands :
-´´´
+```
 echo 40 | sudo tee /sys/class/power_supply/BAT*/charge_start_threshold
 echo 80 | sudo tee /sys/class/power_supply/BAT*/charge_stop_threshold
-´´´
-
+```
 
 # Vim plugins
 We use vim-plug to make the plugins stated in .vimrc work 
