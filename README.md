@@ -5,7 +5,7 @@ Dotfiles for my swaywm setup.
 # Dependencies
 **Not complete yet**  
 
-[How I install my Arch](resources/arch_install_notes.md)
+[How I install my Arch](resources/arch_install_notes.md)   
 [Other subtilities](resources/other_notes.md)
 
 
