@@ -6,6 +6,7 @@ Dotfiles for my swaywm setup.
 **Not complete yet**
 ## Arch Linux
 [How I install my Arch and other subtilities](arch_install_notes.md)
+
 From a base Arch install with yay installed, you need to install following packages.
 If some packages can't be installed with pacman, they are in the AUR
 ```
