@@ -28,6 +28,7 @@ Plug 'tpope/vim-sensible'
 Plug 'morhetz/gruvbox'
 " Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim' , {'branch': 'release'}
+" Plug 'christoomey/vim-system-copy'
 
 call plug#end()
 
@@ -78,3 +79,14 @@ inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 inoremap <silent><expr> <C-Space> coc#refresh()
 
+
+" Clipboard
+" Automatically copy to system clipboard on all yanks
+" augroup YankToClipboard
+  " autocmd!
+  " autocmd TextYankPost * call system('wl-copy', getreg('"'))
+" augroup END
+
+" Paste from system clipboard with wl-paste (p in normal mode)
+" nnoremap p :call append(line('.'), split(system('wl-paste'), "\n"))<CR>
+" vnoremap p "_dP

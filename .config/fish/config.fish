@@ -1,8 +1,13 @@
+# Autostart sway
+
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    if test (tty) = "/dev/tty1"
+        if not set -q WAYLAND_DISPLAY
+            exec sway
+        end
+    end
 end
 
-# Autostart sway
 set -x XDG_SESSION_TYPE wayland
 set -x XDG_CURRENT_DESKTOP sway
 set -x MOZ_ENABLE_WAYLAND 1
