@@ -3,15 +3,23 @@ Dotfiles for my swaywm setup.
 **Please report any published dotfiles which shouldn't be published for security or privacy reasons.**
 
 # Dependencies
-**Not complete yet**
-## Arch Linux
+**Not complete yet**  
+
 [How I install my Arch and other subtilities](resources/arch_install_notes.md)
 
 From a base Arch install with yay installed, you need to install following packages.
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S sway neovim gammastep kitty ly pulseaudio pulseaudio-alsa pulseaudio-bluetooth swayidle swaylock swaync waybar wmenu polkit-gnome
-yay -S whitesur-gtk-theme whitesur-icon-theme
+sudo pacman -S sway gammastep kitty swayidle swaylock swaync waybar wofi polkit-gnome thunar fish gnome-keyring seahorse xorg-xwayland gtk3 lxappearance python3 ninja meson cmake wl-clipboard rclone 
+yay -S whitesur-gtk-theme whitesur-icon-theme librewolf-bin
+```
+
+## Sound
+Install and enable pipewire and complements
+```
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse &
+sudo systemctl enable --now pipewire &
+sudo systemctl enable --now pipewire-pulse.service
 ```
 
 # Apps I use
@@ -19,11 +27,11 @@ Here are some apps I use which aren't required for this config to work but are n
 
 For my fellow Swiss people, here is a fantastic CLI client for the SBB API : [cff-cli](https://github.com/goeil/cff-cli)
 
-## Arch Linux
+
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S thunar fish htop ncdu duplicity deja-dup glow nextcloud-client gnome-keyring seahorse signal-desktop thunderbird tree zathura discord blueman fastfetch
-yay -S brave-bin free42 vlc-git vscodium-bin sway-interactive-screenshot wdisplays
+sudo pacman -S ncdu htop duplicity deja-dup glow nextcloud-client signal-desktop thunderbird tree zathura discord blueman fastfetch nwg-displays imv vlc
+yay -S free42 vscodium-bin sway-interactive-screenshot 
 ```
 
 # Installation
