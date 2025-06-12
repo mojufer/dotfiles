@@ -22,12 +22,12 @@ wipefs -a /dev/<your-disk>
 ```
 fdisk /dev/<your-disk>
 ```
-Type *g* to create a new GPT partition table.  
-Create the EFI partition : type *n* ; *ENTER* ; *ENTER* ; *+100M* ; *t* ; *uefi*
-Create the boot partition : type *n* ; *ENTER* ; *ENTER* ; *+512M* ; *t* ; *ENTER* ; *linux*  
-Create the LUKS partition : type *n* ; *ENTER* ; *ENTER* ; *ENTER* ; *t* ; *ENTER* ; *linux*  
-Verify partition table : *p*  
-Write changes : *w*  
+- Type *g* to create a new GPT partition table.  
+- Create the EFI partition : type *n* ; *ENTER* ; *ENTER* ; *+100M* ; *t* ; *uefi*
+- Create the boot partition : type *n* ; *ENTER* ; *ENTER* ; *+512M* ; *t* ; *ENTER* ; *linux*  
+- Create the LUKS partition : type *n* ; *ENTER* ; *ENTER* ; *ENTER* ; *t* ; *ENTER* ; *linux*  
+- Verify partition table : *p*  
+- Write changes : *w*  
 
 ## Format partitions
 ```
