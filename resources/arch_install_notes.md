@@ -23,7 +23,7 @@ wipefs -a /dev/<your-disk>
 fdisk /dev/<your-disk>
 ```
 Type *g* to create a new GPT partition table.
-Craete the EFI partition : type *n*, *ENTER*, *ENTER*, *+100M*, *t*, *uefi*
+Craete the EFI partition : type *n* ; *ENTER* ; *ENTER* ; *+100M* ; *t* ; *uefi*
 
 
 ```
