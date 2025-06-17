@@ -24,5 +24,8 @@ alias nerd-font-installer='bash -c  "$(curl -fsSL https://raw.githubusercontent.
 alias plan="zathura ~/mojufer/eth/Revisions/plan.pdf"
 alias powerstats="auto-cpufreq --stats"
 alias sl="ls"
+alias l="ls"
+alias s="ls"
+alias lst="ls -lhst"
 
 thefuck --alias | source

@@ -32,7 +32,6 @@ set $suspend $screenlock & systemctl suspend
 
 
 # Font
-# font pango: JetBrainsMono Nerd Font 10
 font pango: JetBrains Mono Nerd Font, Noto Color Emoji, Symbola, DejaVu Sans Mono 10
 
 
@@ -310,7 +309,9 @@ bindsym $mod+r mode "resize"
     bindsym Print exec $screenshot
 
     bindgesture swipe:right workspace prev
+		bindsym $mod+Ctrl+Left workspace prev
     bindgesture swipe:left workspace next
+		bindsym $mod+Ctrl+Right workspace next
 
 
 for_window {

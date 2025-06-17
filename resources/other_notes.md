@@ -19,8 +19,9 @@ If someone gets to make the screen capture and virtual camera work great on sway
 
 It should work with this :
 ```
-sudo pacman -S obs-studio v4l2loopback-dkms v4l2loopback-utils &
-yay -S wlrobs obs-v4l2sink
+sudo pacman -S obs-studio v4l2loopback-dkms v4l2loopback-utils xdg-desktop-portal-wlr &&
+sudo modprobe v4l2loopback &&
+yay -S wlrobs
 ```
 
 
