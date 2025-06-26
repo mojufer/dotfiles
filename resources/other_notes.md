@@ -1,4 +1,5 @@
-# Autostart sway
+#
+Autostart sway
 Sway autostarts on tty1 when the default shell is fish. This works with following lines in config.fish :
 ```
 if status is-interactive
@@ -89,3 +90,13 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 echo "Touch screen disabled!"
 ```
 
+
+# Disable sleep on lid close
+Edit ```/etc/systemd/logind.conf```   
+Uncomment and modify :
+```
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
+```
+Then restart the systemd-logind service.
