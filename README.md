@@ -32,7 +32,7 @@ For my fellow Swiss people, here is a fantastic CLI client for the SBB API : [cf
 
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S ncdu htop duplicity deja-dup glow nextcloud-client signal-desktop thunderbird tree zathura discord blueman fastfetch nwg-displays imv vlc
+sudo pacman -S ncdu htop duplicity deja-dup glow nextcloud-client signal-desktop thunderbird tree zathura discord blueman fastfetch nwg-displays imv vlc exfat-utils
 yay -S free42 vscodium-bin sway-interactive-screenshot 
 ```
 
