@@ -13,6 +13,9 @@ set -x XDG_CURRENT_DESKTOP sway
 set -x MOZ_ENABLE_WAYLAND 1
 set -x QT_QPA_PLATFORM wayland
 
+# Mode ta gueule
+set fish_greeting ""
+
 # Aliases
 alias brave="brave --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias hssh="ssh -i /home/marco/.ssh/id_hezner_marco marco@188.245.36.178"
@@ -27,5 +30,9 @@ alias sl="ls"
 alias l="ls"
 alias s="ls"
 alias lst="ls -lhst"
+alias vimconfig="vim ~/.vimrc"
 
 thefuck --alias | source
+
+
+

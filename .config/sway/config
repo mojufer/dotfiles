@@ -55,7 +55,7 @@ output * bg $wallpaper fill
 # Example configuration:
 #
 exec swayidle -w \
-	 timeout 600 '$screenlock'\
+	 timeout 1600 '$screenlock'\
 	  timeout 10000 'systemctl suspend' \
          before-sleep '$screenlock'
 #
@@ -130,7 +130,9 @@ client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 # }
 
 # Visual
-default_border normal 2
+# default_border normal 2
+default_border pixel 2px
+default_floating_border pixel 2px
 titlebar_border_thickness 2
 #titlebar_padding 5
 
