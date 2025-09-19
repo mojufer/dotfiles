@@ -26,7 +26,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
 Plug 'morhetz/gruvbox'
-" Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 " Plug 'christoomey/vim-system-copy'
 
@@ -58,16 +58,19 @@ highlight Folded ctermbg=NONE guibg=NONE
 highlight Pmenu ctermbg=NONE guibg=NONE
 
 
-" LaTeX
-augroup latex_compile_and_view
+" LaTeX with vimtex plugin
+let g:vimtex_compiler_method = 'latexmk'  " use latexmk for compilation (recommended)
+let g:vimtex_view_method = 'zathura'      " set your PDF viewer here
+let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_view_general_options = '--synctex-forward @line:@col:@tex @pdf'
+
+augroup vimtex_auto_compile
   autocmd!
-  autocmd BufWritePost *.tex call CompileAndView()
+  autocmd BufReadPost *.tex VimtexCompile
 augroup END
 
-function! CompileAndView()
-  " Compile the current LaTeX file silently
-  silent execute '!pdflatex -interaction=nonstopmode -halt-on-error % > /dev/null 2>&1'
-endfunction
+
+
 
 
 " Autocompletion

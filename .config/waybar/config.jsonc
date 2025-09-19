@@ -20,10 +20,13 @@
 
     "modules-left": [
         "sway/workspaces",
-        "sway/mode"
+        "sway/mode",
+				"sway/scratchpad"
     ],
     "modules-center": [
-        "sway/window"
+        // "sway/window"
+        "clock#date",
+				"clock#time"
     ],
     "modules-right": [
         "network",
@@ -32,10 +35,11 @@
         "cpu",
         // "temperature",
         // "custom/keyboard-layout",
+				"backlight",
         "battery",
-        // "tray",
-        "clock#date",
-        "clock#time"
+        "tray"
+        // "clock#date",
+        // "clock#time"
     ],
 
 
@@ -50,9 +54,9 @@
             "critical": 15
         },
         // Connected to AC
-        "format": "  {icon}  {capacity}%", // Icon: bolt
+        "format": "   {icon}  {capacity}%", // Icon: bolt
         // Not connected to AC
-        "format-discharging": "{icon}  {capacity}%",
+        "format-discharging": " {icon}  {capacity}%",
         "format-icons": [
             "", // Icon: battery-full
             "", // Icon: battery-three-quarters
@@ -65,7 +69,7 @@
 
     "clock#time": {
         "interval": 1,
-	//"timezone": "Europe/Zurich",
+	// "timezone": "Europe/Zurich",
         "format": "{:%H:%M:%S}",
         "tooltip": false
     },
@@ -73,7 +77,8 @@
     "clock#date": {
       "interval": 10,
       "format": "{:%a %e %b}", // Icon: calendar-alt 
-      "tooltip": false
+      "tooltip": false,
+			"on-click": "thunderbird -calendar"
     },
 
     "cpu": {
@@ -106,10 +111,11 @@
 
     "network": {
         "interval": 5,
-        "format-wifi": " ", // Icon: wifi
+        "format-wifi": "  {bandwidthDownBits}", // Icon: wifi
         "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "⚠",
-        "tooltip-format": "{ifname}: {essid}"
+        "tooltip-format": "{ifname}: {essid}",
+				"on-click": "kitty nmtui"
     },
 
     "sway/mode": {
@@ -133,16 +139,25 @@
         }
     },
 
+		"sway/scratchpad": {
+				"format": "{icon} {count}",
+				"show-empty": false,
+				"format-icons": ["", ""],
+				"tooltip": true,
+				"tooltip-format": "{app}: {title}"
+		},
+
     "pulseaudio": {
 	"reverse-scrolling": 1,
         //"scroll-step": 1,
         "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon}  {volume}% ",
+        "format-bluetooth": "{icon} {volume}% ",
         "format-muted": "",
         "format-icons": {
-            "default": ["", ""]
+            "default": ["", ""],
+						"headphone": ""
         },
-        "on-click": "pavucontrol"
+        "on-click": "easyeffects"
     },
 
     "temperature": {
@@ -159,12 +174,13 @@
       "tooltip": true
     },
 
+		"backlight": {
+			"format": " {icon} {percent}%",
+			"format-icons": ["", "", "", "", "", "", "", "", ""]
+		},
+
     "tray": {
-        "icon-size": 21,
+        "icon-size": 17,
         "spacing": 10
     }
-
-    
-    
-
 }
