@@ -20,5 +20,5 @@ else
   ln -nfs $CURRENT_DIR/.vimrc $HOME/.vimrc
   cp -rs $CURRENT_DIR/.config/ $HOME/.config/
   sudo ln -nfs $CURRENT_DIR/resources/ch /usr/share/X11/xkb/symbols/ch
-  sudo cp $CURRENT_DIR/sofware/wallpaper /bin/wallpaper
+  sudo cp $CURRENT_DIR/software/wallpaper /bin/wallpaper
 fi
