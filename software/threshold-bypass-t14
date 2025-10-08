@@ -1,0 +1,39 @@
+#!/bin/sh
+
+reset_thresholds() {
+  for BAT in BAT0 ; do
+    echo 40 > /sys/class/power_supply/$BAT/charge_start_threshold
+    echo 80 > /sys/class/power_supply/$BAT/charge_stop_threshold
+  done
+}
+
+if [ "$(id -u)" != "0" ]; then
+  echo "This script needs to be run as root. Trying with sudo..."
+  exec sudo sh "$0" "$@"
+fi
+
+for BAT in BAT0 ; do
+  echo 0 > /sys/class/power_supply/$BAT/charge_start_threshold
+  echo 95 > /sys/class/power_supply/$BAT/charge_stop_threshold
+done
+
+echo Temporary thresholds set
+
+RESET0=0
+
+trap 'reset_thresholds; exit' INT TERM
+
+while [ "$RESET0" -eq 0 ] || [ "$RESET1" -eq 0 ]; do
+  if [ "$RESET0" -eq 0 ]; then
+    CHARGE0=$(cat /sys/class/power_supply/BAT0/capacity 2>/dev/null || echo 0)
+    [ "$CHARGE0" -ge 95 ] && RESET0=1
+  fi
+
+	echo BAT0 : $CHARGE0%
+  sleep 10
+	echo 
+done
+
+reset_thresholds
+echo Thresholds reset
+
