@@ -31,8 +31,12 @@ alias l="ls"
 alias s="ls"
 alias lst="ls -lhst"
 alias vimconfig="vim ~/.vimrc"
+alias edcenv="source /home/marco/edcenv/bin/activate.fish"
+
 
 thefuck --alias | source
 
 
 
+set -x QT_QPA_PLATFORM wayland
+set -x QT_PLUGIN_PATH /usr/lib/qt/plugins
