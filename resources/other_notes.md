@@ -100,3 +100,10 @@ HandleLidSwitchExternalPower=ignore
 HandleLidSwitchDocked=ignore
 ```
 Then restart the systemd-logind service.
+
+
+# T14 Gen 4 
+Sound card needs Sound Open Firmware
+```
+sudo pacman -S sof-firmware
+```
