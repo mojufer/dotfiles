@@ -30,8 +30,45 @@ yay -S wlrobs
 ```
 sudo pacman -S python-typing_extensions &
 yay -S auto-cpufreq &
-systemctl enable --now auto-cpufreq
+systemctl enable --now auto-cpufreq &
 ```
+## Kernel Parameters
+Enables Panel Self Refresh, Frame Buffer Compression and Deep GPU sleep states to reduce iGPU power usage.
+Add the following the ```/etc/modprobe.d/i915.conf```
+```
+options i915 enable_psr=1 enable_fbc=1 enable_dc=2
+```
+Then regenerate initramfs with ```mkinitcpio -P```
+### Side effects
+- ```enable_psr=1``` may cause flickering / artifacts on some displays
+- ```enable_fbc=1``` may cause minor glitches in animations
+- ```enable_dc=2``` may cause lag on resume from suspend
+
+## Powertop
+Run ```powertop --auto-tune``` to optimize runtime power management. Tweaks USB autosuspend, device power states and other runtime settings to save power.
+```
+sudo pacman -S powertop
+sudo powertop --auto-tune
+```
+Make it permanent by editing ```/etc/systemd/system/powertop.service``` :
+```
+[Unit]
+Description=Powertop tunings
+
+[Service]
+ExecStart=/usr/bin/powertop --auto-tune
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+```
+Enable service with 
+```
+sudo systemctl enable --now powertop.service
+```
+### Side effects
+- USB autosuspend may cause slight delays when waking devices
+- USB audio devices might disconnect occasionally
 
 ## Charge treshold
 To put the charge thresholds to all the batteries of a laptop to only start charging when the battery is at 40% and stop at 80%, run following commands :
