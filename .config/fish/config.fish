@@ -32,6 +32,8 @@ alias s="ls"
 alias lst="ls -lhst"
 alias vimconfig="vim ~/.vimrc"
 alias edcenv="source /home/marco/edcenv/bin/activate.fish"
+alias start-vpn="sudo systemctl start wg-quick@wg0"
+alias stop-vpn="sudo systemctl stop wg-quick@wg0"
 
 
 thefuck --alias | source
@@ -40,3 +42,4 @@ thefuck --alias | source
 
 set -x QT_QPA_PLATFORM wayland
 set -x QT_PLUGIN_PATH /usr/lib/qt/plugins
+set -x LIBVA_DRIVER_NAME iHD

@@ -12,8 +12,8 @@ Dotfiles for my swaywm setup.
 From a base Arch install with yay installed, you need to install following packages.
 If some packages can't be installed with pacman, they are in the AUR
 ```
-sudo pacman -S sway gammastep kitty swayidle swaylock swaync waybar wofi polkit-gnome thunar fish gnome-keyring seahorse xorg-xwayland gtk3 lxappearance python3 ninja meson cmake wl-clipboard rclone noto-fonts noto-fonts-emoji ttf-dejavu brightnessctl swaybg
-yay -S whitesur-gtk-theme whitesur-icon-theme librewolf-bin ttf-symbola 
+sudo pacman -S sway gammastep kitty swayidle swaync waybar wofi polkit-gnome thunar fish gnome-keyring seahorse xorg-xwayland gtk3 lxappearance python3 ninja meson cmake wl-clipboard rclone noto-fonts noto-fonts-emoji ttf-dejavu brightnessctl swaybg
+yay -S whitesur-gtk-theme whitesur-icon-theme librewolf-bin ttf-symbola swaylock-effects
 ```
 
 ## Sound
