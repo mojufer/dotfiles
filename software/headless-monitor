@@ -1,0 +1,63 @@
+#!/bin/sh
+
+OUTPUT="HEADLESS-1"
+RESOLUTION="2266x1488"
+SCALE=2
+VNC_HOST="sven.local"
+VNC_PORT=5900
+
+if [ "$1" = "--end" ]; then
+	echo "Disabling output $OUTPUT..."
+	swaymsg output "$OUTPUT" disable
+	killall wayvnc
+	exit 0
+fi
+
+# Check if jq installed
+if ! command -v jq &>/dev/null; then
+	echo "Error: jq is required but not installed."
+	exit 1
+fi
+
+# Check if wayvnc is installed
+if ! command -v wayvnc &>/dev/null; then
+	echo "Error: wayvnc is required but not installed."
+	exit 1
+fi
+
+# Check if HEADLESS-1 exists
+status=$(swaymsg -t get_outputs | jq -r --arg out "$OUTPUT" '
+	map(select(.name == $out)) | 
+	if length == 0 then "not_found" else .[0].active|tostring end
+	')
+
+case "$status" in 
+	not_found)
+		echo "$OUTPUT does not exist, trying to enable..."
+		swaymsg create_output "$OUTPUT" && echo "$OUTPUT created"|| {
+			echo "Failed to enable $OUTPUT"
+		  exit 1
+		}
+		;;
+	true)
+		echo "$OUTPUT exists and is active"
+		;;
+	false)
+		echo "$OUTPUT exists but is inactive, enabling..."
+		swaymsg output "$OUTPUT" enable || {
+			echo "Failed to enable $OUTPUT"
+		  exit 1
+		}
+	  ;;
+	*)
+		echo "Unexpected status: $status"
+		exit 1
+		;;
+esac
+
+# Set resolution and scale 
+echo "Launching wayvnc on $VNC_HOST:$VNC_PORT..."
+swaymsg output "$OUTPUT" resolution "$RESOLUTIN" scale "$SCALE"
+
+# Launch wayvnc
+wayvnc --output="$OUTPUT" "$VNC_HOST" "$VNC_PORT" --render-cursor --max-fps=20

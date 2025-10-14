@@ -14,3 +14,7 @@ output * bg $wallpaper fill
 
 # threshold-bypass
 Bypasses the battery charge thresholds found in ```/sys/class/power_supply/BAT0``` and ```/sys/class/power_supply/BAT1``` (for a laptop with two batteries). Reset them after script is closed.
+
+# win11
+Script to automatically launch a Windows 11 vm with virt-viewer.  
+See [this note](../resources/windows11_vm.md) for the initial setup.

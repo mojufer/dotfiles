@@ -1,0 +1,11 @@
+#!/bin/sh
+
+VM_NAME="win11"
+
+# Start VM if not already running
+if ! virsh domstate "$VM_NAME" | grep -q "running"; then
+	virsh start "$VM_NAME"
+fi
+
+# Launch the VM in fullscreen with virt-viewer
+virt-viewer --connect qemu:///session --attach "$VM_NAME"
