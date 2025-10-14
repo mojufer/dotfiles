@@ -18,3 +18,6 @@ Bypasses the battery charge thresholds found in ```/sys/class/power_supply/BAT0`
 # win11
 Script to automatically launch a Windows 11 vm with virt-viewer.  
 See [this note](../resources/windows11_vm.md) for the initial setup.
+
+# headless-monitor
+Script to use an iPad with a VNC client as a second monitor.
