@@ -12,12 +12,17 @@ if [ "$(id -u)" != "0" ]; then
   exec sudo sh "$0" "$@"
 fi
 
+# Use first argument as stop threshold, default to 95 if not given
+TEMP_STOP_THRESHOLD="${1:-95}"
+
 for BAT in BAT0 ; do
   echo 0 > /sys/class/power_supply/$BAT/charge_start_threshold
-  echo 95 > /sys/class/power_supply/$BAT/charge_stop_threshold
+  echo "$TEMP_STOP_THRESHOLD" > /sys/class/power_supply/$BAT/charge_stop_threshold
 done
 
 echo Temporary thresholds set
+echo charge_stop_threshold set to $TEMP_STOP_THRESHOLD%
+echo
 
 RESET0=0
 
@@ -26,7 +31,7 @@ trap 'reset_thresholds; exit' INT TERM
 while [ "$RESET0" -eq 0 ] || [ "$RESET1" -eq 0 ]; do
   if [ "$RESET0" -eq 0 ]; then
     CHARGE0=$(cat /sys/class/power_supply/BAT0/capacity 2>/dev/null || echo 0)
-    [ "$CHARGE0" -ge 95 ] && RESET0=1
+    [ "$CHARGE0" -ge "$TEMP_STOP_THRESHOLD" ] && RESET0=1
   fi
 
 	echo BAT0 : $CHARGE0%
