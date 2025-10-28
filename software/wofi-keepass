@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Copy fields from KeePassXC via Wofi (no terminal interaction)
+
+set -euo pipefail
+
+DB="$HOME/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx"
+KEYFILE="$HOME/.keys/keypassxc"
+DEBUG=true   # <-- Set to true to enable debug messages
+
+# Helper function for debug messages
+dbg() {
+    $DEBUG && notify-send "DEBUG" "$1" -t 2000
+}
+
+# Ask for KeePass password
+db_pass=$(wofi --dmenu -P -p "KeePassXC password:")
+[ -z "$db_pass" ] && exit 0
+dbg "Master password entered"
+
+# List entries with full paths for Wofi
+entry=$(echo "$db_pass" | keepassxc-cli ls -R -q "$DB" --key-file "$KEYFILE" \
+        | awk '
+            /^[^ ]/ { grp=$0; next }
+            /^[ ]/ { gsub(/^ +/, "", $0); print grp "/" $0 }' \
+        | wofi --dmenu -p "Entry:")
+[ -z "$entry" ] && exit 0
+dbg "Selected entry: $entry"
+
+# Choose field
+field=$(printf "password\nusername\nurl" | wofi --dmenu -p "Field:")
+[ -z "$field" ] && exit 0
+dbg "Selected field: $field"
+
+# Retrieve value from KeePassXC
+value=$(echo "$db_pass" | keepassxc-cli show -s "$DB" "$entry" "$field" --key-file "$KEYFILE" 2>/dev/null | tr -d '\r')
+
+if [ -z "$value" ]; then
+    notify-send "Error" "No value returned for $field in $entry" -t 3000
+    exit 1
+fi
+
+dbg "Value retrieved: $value"
+
+# Copy to clipboard
+echo -n "$value" | wl-copy
+dbg "Copied to clipboard"
+
+# Optional: clear clipboard after 10 seconds
+(sleep 10 && wl-copy --clear) &
+
+notify-send "Copied $field for $entry" -t 1500
+
