@@ -117,6 +117,9 @@ exec_always --no-startup-id bash -c 'eval $(gnome-keyring-daemon --start) && exp
 # Nextcloud
 exec nextcloud --background
 
+# KeePassXC
+# exec keepassxc --minimized --keyfile ~/.keys/keypassxc ~/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx
+
 
 
 ### Input configuration
@@ -192,6 +195,9 @@ titlebar_border_thickness 2
 
     # Start file manager
     bindsym $mod+n exec $files
+
+		# Start password manager
+		bindsym $mod+p exec keepassxc
 
     # Lock screen
     bindsym $mod+x exec $screenlock
@@ -343,6 +349,8 @@ bindsym $mod+r mode "resize"
 for_window {
     [app_id="free42"] floating enable
     [app_id="org.gnome.clocks"] floating enable
+		[app_id="virt-viewer"] fullscreen enable
+		[class="KeePassXC"] floating enable, move position center
 }
 
 #
