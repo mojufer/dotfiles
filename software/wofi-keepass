@@ -1,52 +1,64 @@
 #!/usr/bin/env bash
-# Copy fields from KeePassXC via Wofi (no terminal interaction)
+# Simple KeePassXC + Wofi password picker for Sway/Wayland
+# by ChatGPT
 
-set -euo pipefail
+DB_PATH="/home/marco/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx"
+KEY_FILE="/home/marco/.keys/keypassxc"
+KEEPASS_CLI="/usr/bin/keepassxc-cli"
 
-DB="$HOME/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx"
-KEYFILE="$HOME/.keys/keypassxc"
-DEBUG=true   # <-- Set to true to enable debug messages
+# Wofi config from sway config variable ($menu)
+WOFI_CMD="wofi --show run"
 
-# Helper function for debug messages
-dbg() {
-    $DEBUG && notify-send "DEBUG" "$1" -t 2000
-}
+# You can override Wofi look/feel here if needed
+# Example: WOFI_CMD="wofi --dmenu --prompt='Passwords:'"
 
-# Ask for KeePass password
-db_pass=$(wofi --dmenu -P -p "KeePassXC password:")
-[ -z "$db_pass" ] && exit 0
-dbg "Master password entered"
-
-# List entries with full paths for Wofi
-entry=$(echo "$db_pass" | keepassxc-cli ls -R -q "$DB" --key-file "$KEYFILE" \
-        | awk '
-            /^[^ ]/ { grp=$0; next }
-            /^[ ]/ { gsub(/^ +/, "", $0); print grp "/" $0 }' \
-        | wofi --dmenu -p "Entry:")
-[ -z "$entry" ] && exit 0
-dbg "Selected entry: $entry"
-
-# Choose field
-field=$(printf "password\nusername\nurl" | wofi --dmenu -p "Field:")
-[ -z "$field" ] && exit 0
-dbg "Selected field: $field"
-
-# Retrieve value from KeePassXC
-value=$(echo "$db_pass" | keepassxc-cli show -s "$DB" "$entry" "$field" --key-file "$KEYFILE" 2>/dev/null | tr -d '\r')
-
-if [ -z "$value" ]; then
-    notify-send "Error" "No value returned for $field in $entry" -t 3000
-    exit 1
+# Ensure database and key exist
+if [[ ! -f "$DB_PATH" ]]; then
+  notify-send "KeePassXC" "Database not found: $DB_PATH"
+  exit 1
 fi
 
-dbg "Value retrieved: $value"
+if [[ ! -f "$KEY_FILE" ]]; then
+  notify-send "KeePassXC" "Key file not found: $KEY_FILE"
+  exit 1
+fi
 
-# Copy to clipboard
-echo -n "$value" | wl-copy
-dbg "Copied to clipboard"
+# List entries
+echo list entries
+entries=$($KEEPASS_CLI ls -R "$DB_PATH" --no-password --key-file "$KEY_FILE" 2>/dev/null)
 
-# Optional: clear clipboard after 10 seconds
-(sleep 10 && wl-copy --clear) &
 
-notify-send "Copied $field for $entry" -t 1500
+if [[ -z "$entries" ]]; then
+  notify-send "KeePassXC" "No entries found or database locked."
+  exit 1
+fi
 
+# Choose entry
+echo choose entry
+selection=$(echo "$entries" | $WOFI_CMD --prompt "Password entry:" --dmenu)
+selection=$(echo "$selection" | xargs)
+[[ -z "$selection" ]] && exit 0
+
+# Get password and copy to clipboard
+echo $selection
+# password=$($KEEPASS_CLI show -s -a Password "$DB_PATH" "$selection" --no-password --key-file "$KEY_FILE" 2>/dev/null)
+password="$("$KEEPASS_CLI" show -s -a Password "$DB_PATH" "$selection" --no-password --key-file "$KEY_FILE" 2>/dev/null)"
+
+
+if [[ -z "$password" ]]; then
+  notify-send "KeePassXC" "Failed to get password for $selection"
+  exit 1
+fi
+
+# Copy securely
+echo -n "$password" | wl-copy
+
+# Schedule clipboard clearing in the background after 30 seconds
+(
+    sleep 30
+    # Only clear if clipboard still contains this password
+    current_clip=$(wl-paste)
+    if [[ "$current_clip" == "$password" ]]; then
+        echo -n "" | wl-copy
+    fi
+) &

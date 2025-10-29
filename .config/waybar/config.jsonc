@@ -31,6 +31,7 @@
     "modules-right": [
         "network",
         "pulseaudio",
+				"custom/audio_idle_inhibitor",
         //"memory",
         "cpu",
         // "temperature",
@@ -39,6 +40,7 @@
         "battery",
 				"custom/power",
         "tray"
+				// "custom/inhibit"
         // "clock#date",
         // "clock#time"
     ],
@@ -190,5 +192,24 @@
 			"interval" : 1,
 			"max-length" : 6,
 			"min-length" : 6
+		},
+		"custom/audio_idle_inhibitor": {
+			"format": "{icon}",
+			"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+			"exec-if": "which sway-audio-idle-inhibit",
+			"return-type": "json",
+			"format-icons": {
+				"output": " ",
+				"input": " ",
+				"output-input": "   ",
+				"none": ""
+			}
 		}
+		// "custom/inhibit" :{
+		// 	"exec": "~/dotfiles/.config/waybar/toggle_inhibit.sh",
+		// 	"on-click": "~/dotfiles/.config/waybar/toggle_inhibit.sh",
+		// 	"return-type": "json",
+		// 	"interval": 2,
+		// 	"signal": 10
+		// }
 }

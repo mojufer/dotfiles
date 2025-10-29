@@ -33,6 +33,7 @@ set $menu wofi --show run
 set $browser librewolf
 set $firefox firefox
 set $files thunar
+set $passwords wofi-keepass
 set $wallpaper `wallpaper --get-wallpaper-name`
 set $screenlock swaylock -f --image $wallpaper \
 	--screenshots \
@@ -93,6 +94,9 @@ exec swayidle -w \
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+# Enables inhibit_idle when playing audio
+exec sway-audio-idle-inhibit
 
 set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
@@ -197,7 +201,7 @@ titlebar_border_thickness 2
     bindsym $mod+n exec $files
 
 		# Start password manager
-		bindsym $mod+p exec keepassxc
+		bindsym $mod+p exec $passwords
 
     # Lock screen
     bindsym $mod+x exec $screenlock
