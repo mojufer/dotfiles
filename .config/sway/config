@@ -35,10 +35,9 @@ set $firefox firefox
 set $files thunar
 set $passwords wofi-keepass
 set $wallpaper `wallpaper --get-wallpaper-name`
-set $screenlock swaylock -f --image $wallpaper \
-	--screenshots \
+set $screenlock swaylock -f --screenshots \
 	--effect-blur 7x5 \
-	--indicator\
+	--indicator \
 	--indicator-radius 100 \
 	--indicator-thickness 12 \
 	--ring-color e2232a \
@@ -87,8 +86,8 @@ output * bg $wallpaper fill
 # Example configuration:
 #
 exec swayidle -w \
-	 timeout 1600 '$screenlock'\
-	  timeout 10000 'systemctl suspend' \
+	 timeout 300 '$screenlock'\
+	  timeout 600 'systemctl suspend' \
          before-sleep '$screenlock'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
