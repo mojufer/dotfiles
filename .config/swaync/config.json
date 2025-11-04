@@ -47,7 +47,7 @@
     "example-name": {
       "state": "muted",
       "urgency": "Low",
-      "app-name": "Spotify"
+      "app-name": "rhythmbox"
     }
   },
   "widgets": [
