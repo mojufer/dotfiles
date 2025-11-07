@@ -98,7 +98,8 @@ exec swayidle -w \
 exec sway-audio-idle-inhibit
 
 set $laptop eDP-1
-bindswitch --reload --locked lid:on output $laptop disable
+# bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:on exec sh -c 'sleep 0.5; bindswitch --locked lid:on output $laptop disable'
 bindswitch --reload --locked lid:off output $laptop enable
 
 

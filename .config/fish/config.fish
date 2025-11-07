@@ -34,6 +34,7 @@ alias vimconfig="vim ~/.vimrc"
 alias edcenv="source /home/marco/edcenv/bin/activate.fish"
 alias start-vpn="sudo systemctl start wg-quick@wg0"
 alias stop-vpn="sudo systemctl stop wg-quick@wg0"
+alias compta="libreoffice /home/marco/mojufer/Documents/Compta/compta_2025.ods &"
 
 
 thefuck --alias | source
