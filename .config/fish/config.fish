@@ -35,6 +35,7 @@ alias edcenv="source /home/marco/edcenv/bin/activate.fish"
 alias start-vpn="sudo systemctl start wg-quick@wg0"
 alias stop-vpn="sudo systemctl stop wg-quick@wg0"
 alias compta="libreoffice /home/marco/mojufer/Documents/Compta/compta_2025.ods &"
+alias edp-share="wayvnc -d -r --output=eDP-1 sven.local 5900"
 
 
 thefuck --alias | source
