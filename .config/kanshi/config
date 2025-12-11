@@ -1,6 +1,18 @@
 profile Dock {
 				output eDP-1 disable
-				output DP-6 enable
+				output DP-5 enable
+}
+
+
+
+profile eth-cab {
+				output eDP-1 position 0,1080
+				output HDMI-A-1 HDMI-A-1 'Lenovo Group Limited LEN-M90a-3-BA 0x00000001' mode 1920x1080 position 0,0
+}
+
+profile eth-e27 {
+				output eDP-1 position 320,1440
+				output HDMI-A-1 'HP Inc. HP 527pq VNG5120MJC' mode 2560x1440 position 0,0
 }
 
 profile Laptop {
