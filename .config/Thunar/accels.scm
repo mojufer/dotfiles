@@ -1,4 +1,4 @@
-; Thunar GtkAccelMap rc-file         -*- scheme -*-
+; thunar GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/ThunarDetailsView/expandable-folders" "")
@@ -71,6 +71,7 @@
 ; (gtk_accel_path "<Actions>/ThunarActionManager/open-with-other" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/invert-selection" "<Primary><Shift>i")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-mtime" "")
+; (gtk_accel_path "<Actions>/ThunarWindow/contents/help-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-side-pane-shortcuts" "<Primary>b")
 ; (gtk_accel_path "<Actions>/ThunarWindow/reload-alt-2" "Reload")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-location-selector-menu" "")
@@ -84,7 +85,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/reload-alt-1" "F5")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/delete-3" "<Shift>KP_Delete")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/unselect-all-files" "Escape")
-; (gtk_accel_path "<Actions>/ThunarWindow/contents/help-menu" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/b2317ef061b641d45c689e1185e6281c" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/arrange-items-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/32e643c94a3e7d17ecfe871138f79e8c" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-computer" "")

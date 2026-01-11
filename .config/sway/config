@@ -122,10 +122,15 @@ exec_always --no-startup-id bash -c 'eval $(gnome-keyring-daemon --start) && exp
 exec nextcloud --background
 
 # KeePassXC
-# exec keepassxc --minimized --keyfile ~/.keys/keypassxc ~/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx
+# exec_always keepassxc --keyfile ~/.keys/keypassxc ~/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx
 
 # Display profiles
 exec_always "systemctl --user restart kanshi.service"
+
+
+# KDE Connect
+# exec_always QT_QPA_PLATFORM=xcb kdeconnectd
+# exec_always kdeconnect-indicator
 
 
 
