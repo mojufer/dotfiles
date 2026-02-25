@@ -28,6 +28,7 @@ set $term kitty
 #set $menu wmenu-run
 # set $menu dmenu_path | wmenu-run -S "#e2232a" -f "JetBrainsMono Nerd Font 10" | xargs swaymsg exec --
 set $menu wofi --show run
+# set $menu nwg-drawer
 
 # set $browser brave
 set $browser librewolf
@@ -161,14 +162,15 @@ client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
 set $gnome-schema org.gnome.desktop.interface
 
-exec_always {
-		gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-    # gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
-    gsettings set $gnome-schema gtk-theme 'Dracula-dark'
-    gsettings set $gnome-schema icon-theme 'Adwaita'
-    gsettings set $gnome-schema cursor-theme 'Adwaita'
-    gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
-}
+# Replaced with nwg-look
+# exec_always {
+# 		gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+#     # gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+#     gsettings set $gnome-schema gtk-theme 'Dracula-dark'
+#     gsettings set $gnome-schema icon-theme 'Adwaita'
+#     gsettings set $gnome-schema cursor-theme 'Adwaita'
+    # gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 10'
+# }
 
 # Visual
 # default_border normal 2
