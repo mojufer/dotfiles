@@ -140,7 +140,9 @@ exec_always "systemctl --user restart kanshi.service"
 # Example configuration:
 #
 input "type:touchpad" {
-	dwt enabled
+				accel_profile adaptive
+				pointer_accel 0.0
+				dwt enabled
         tap enabled
         natural_scroll enabled
         middle_emulation enabled
