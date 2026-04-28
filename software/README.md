@@ -21,3 +21,6 @@ See [this note](../resources/windows11_vm.md) for the initial setup.
 
 # headless-monitor
 Script to use an iPad with a VNC client as a second monitor.
+
+# trackpoint-setup
+Not sure if it helps or even hurts the trackpoint / touchpad usability.
