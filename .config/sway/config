@@ -139,9 +139,13 @@ exec_always "systemctl --user restart kanshi.service"
 #
 # Example configuration:
 #
+# input "name:ELAN0676:00 04F3:3195 Touchpad" {
+
+exec_always "swaymsg 'input "type:touchpad" natural_scroll enabled'"
+
 input "type:touchpad" {
 				accel_profile adaptive
-				pointer_accel 0.0
+				pointer_accel 0.4
 				dwt enabled
         tap enabled
         natural_scroll enabled
@@ -383,3 +387,4 @@ bar {
 }
 
 include /etc/sway/config.d/*
+include touchpad
