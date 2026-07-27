@@ -27,6 +27,20 @@ x-scheme-handler/unknown=librewolf.desktop
 x-scheme-handler/readest=readest-handler.desktop
 x-scheme-handler/postman=Postman.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=onlyoffice-desktopeditors.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-9UZXQ3.desktop
+message/rfc822=userapp-Thunderbird-9UZXQ3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-9UZXQ3.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-CHPWQ3.desktop
+text/calendar=userapp-Thunderbird-CHPWQ3.desktop
+application/x-extension-ics=userapp-Thunderbird-CHPWQ3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-CHPWQ3.desktop
 
 [Added Associations]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=onlyoffice-desktopeditors.desktop;
+application/pdf=com.github.xournalpp.xournalpp.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-9UZXQ3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-9UZXQ3.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-CHPWQ3.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-CHPWQ3.desktop;

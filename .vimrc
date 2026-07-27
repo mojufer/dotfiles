@@ -29,6 +29,10 @@ Plug 'morhetz/gruvbox'
 Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 " Plug 'christoomey/vim-system-copy'
+Plug 'autozimu/LanguageClient-neovim' , {
+	\ 'branch' : 'next',
+	\ 'do' : 'bash install.sh',
+	\}
 
 call plug#end()
 
