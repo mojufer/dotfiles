@@ -1,0 +1,43 @@
+{
+  "filter_text": {
+    "values": [
+      "",
+      ""
+    ]
+  },
+  "&Replace": {
+    "values": [
+      "1-chroniques_01.mp3",
+      "_",
+      "-",
+      "_"
+    ]
+  },
+  "w&ith:": {
+    "values": [
+      "1-chroniques_01.mp3",
+      " ",
+      " "
+    ]
+  },
+  "&Pattern": {
+    "values": [
+      "",
+      "%dummy%-%title%",
+      "%title%",
+      "%title%"
+    ]
+  },
+  "For &Mixed Case, after any of:": {
+    "values": [
+      "., !",
+      "., !-",
+      "., !-"
+    ]
+  },
+  "&Format string": {
+    "values": [
+      "%artist% - %titl"
+    ]
+  }
+}

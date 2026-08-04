@@ -1,0 +1,40 @@
+{
+  "puddlestuff.functions_autonumbering": {
+    "arguments": [
+      1,
+      false,
+      1
+    ],
+    "fields": [
+      "__all"
+    ]
+  },
+  "puddlestuff.functions_filenametotag": {
+    "arguments": [
+      "%title%"
+    ],
+    "fields": [
+      "just nothing to do with this"
+    ]
+  },
+  "puddlestuff.functions_titleCase": {
+    "arguments": [
+      "Mixed Case",
+      "., !-"
+    ],
+    "fields": [
+      "title"
+    ]
+  },
+  "puddlestuff.functions_replace": {
+    "arguments": [
+      "_",
+      " ",
+      false,
+      false
+    ],
+    "fields": [
+      "title"
+    ]
+  }
+}
