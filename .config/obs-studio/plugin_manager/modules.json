@@ -1,0 +1,29 @@
+[
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "wlrobs",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "wlrobs-scpy",
+            "wlrobs-dmabuf"
+        ],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "input-overlay",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "input-overlay"
+        ],
+        "version": ""
+    }
+]
