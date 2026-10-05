@@ -1,0 +1,9 @@
+[Unit]
+Description=KeePassXC Auto Start
+
+[Service]
+ExecStart=/usr/bin/keepassxc --minimized --keyfile /home/marco/.keys/keypassxc /home/marco/mojufer/Documents/Admin/keyPassXC/Passwords.kdbx
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

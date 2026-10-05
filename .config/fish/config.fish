@@ -37,6 +37,8 @@ alias stop-vpn="sudo systemctl stop wg-quick@wg0"
 alias compta="libreoffice /home/marco/mojufer/Documents/Compta/compta_2025.ods &"
 alias edp-share="wayvnc -d -r --output=eDP-1 sven.local 5900"
 alias album="yt-dlp --config-locations ~/.config/yt-dlp/"
+alias coverresize="convert cover.jpg -resize 400x400 cover.jpg"
+alias oo="onlyoffice-desktopeditors"
 
 
 thefuck --alias | source
