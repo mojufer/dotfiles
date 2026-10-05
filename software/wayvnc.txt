@@ -1,0 +1,1 @@
+wayvnc -d -r --output=eDP-1 sven.local 5900
