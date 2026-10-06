@@ -27,7 +27,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
 Plug 'morhetz/gruvbox'
 Plug 'lervag/vimtex'
-Plug 'neoclide/coc.nvim' , {'branch': 'release'}
+" Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 " Plug 'christoomey/vim-system-copy'
 Plug 'autozimu/LanguageClient-neovim' , {
 	\ 'branch' : 'next',
