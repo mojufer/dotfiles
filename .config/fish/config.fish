@@ -1,5 +1,10 @@
 # Autostart sway
 
+set -x QT_QPA_PLATFORM wayland
+set -x QT_QPA_PLATFORMTHEME qt5ct
+set -x QT_PLUGIN_PATH /usr/lib/qt/plugins
+set -x LIBVA_DRIVER_NAME iHD
+
 if status is-interactive
     if test (tty) = "/dev/tty1"
         if not set -q WAYLAND_DISPLAY
@@ -41,10 +46,4 @@ alias coverresize="convert cover.jpg -resize 400x400 cover.jpg"
 alias oo="onlyoffice-desktopeditors"
 
 
-thefuck --alias | source
-
-
-
-set -x QT_QPA_PLATFORM wayland
-set -x QT_PLUGIN_PATH /usr/lib/qt/plugins
-set -x LIBVA_DRIVER_NAME iHD
+# thefuck --alias | source

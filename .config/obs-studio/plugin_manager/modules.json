@@ -7,10 +7,7 @@
         "module_name": "wlrobs",
         "outputs": [],
         "services": [],
-        "sources": [
-            "wlrobs-scpy",
-            "wlrobs-dmabuf"
-        ],
+        "sources": [],
         "version": ""
     },
     {
@@ -21,8 +18,20 @@
         "module_name": "input-overlay",
         "outputs": [],
         "services": [],
+        "sources": [],
+        "version": ""
+    },
+    {
+        "display_name": "",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "libwlrobs",
+        "outputs": [],
+        "services": [],
         "sources": [
-            "input-overlay"
+            "wlrobs-scpy",
+            "wlrobs-dmabuf"
         ],
         "version": ""
     }

@@ -61,6 +61,7 @@ set $screenlock swaylock -f --screenshots \
 set $screenshot sway-interactive-screenshot -s region --save-dir ~/Pictures/Screenshots/
 set $notification-menu swaync-client -t -sw
 set $suspend $screenlock & systemctl suspend
+set $hibernate $screenlock & systemctl hibernate
 
 
 # Font
@@ -151,6 +152,9 @@ input "type:touchpad" {
         natural_scroll enabled
         middle_emulation enabled
     }
+input "1133:16497:Logitech_MX_Master" {
+				natural_scroll disabled 
+}
 input * {
 	xkb_layout "ch(fr_rudolph)"
 }
@@ -167,6 +171,8 @@ client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
 
 set $gnome-schema org.gnome.desktop.interface
+
+
 
 # Replaced with nwg-look
 # exec_always {
@@ -232,6 +238,9 @@ titlebar_border_thickness 2
 
     # suspend
     bindsym $mod+Shift+s exec $suspend
+
+		# hibernate
+		bindsym $mod+Shift+x exec $hibernate
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
