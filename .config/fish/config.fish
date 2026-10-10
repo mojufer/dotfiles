@@ -21,7 +21,11 @@ set -x QT_QPA_PLATFORM wayland
 # Mode ta gueule
 set fish_greeting ""
 
+# PATH
+fish_add_path /home/marco/Applications
+
 # Aliases
+alias fuck="sudo $history[1]"
 alias brave="brave --enable-features=UseOzonePlatform --ozone-platform=wayland"
 alias hssh="ssh -i /home/marco/.ssh/id_hezner_marco marco@188.245.36.178"
 alias swayconfig="vim ~/.config/sway/config"
@@ -46,4 +50,3 @@ alias coverresize="convert cover.jpg -resize 400x400 cover.jpg"
 alias oo="onlyoffice-desktopeditors"
 
 
-# thefuck --alias | source

@@ -1,0 +1,51 @@
+{
+    "label" : "swaylock -f --screenshots \
+  --effect-blur 7x5 \
+  --indicator \
+  --indicator-radius 100 \
+  --indicator-thickness 12 \
+  --ring-color e2232a \
+  --ring-ver-color 323232 \
+  --ring-clear-color e0e0e0 \
+  --separator-color 000000 \
+  --inside-clear-color 111111 \
+  --inside-ver-color 111111 \
+  --text-color ffffff \
+  --text-clear-color ffffff \
+  --text-ver-color ffffff \
+  --grace 0 \ 
+  --clock",
+    "action" : "loginctl lock-session",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "Hibernate",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "loginctl terminate-user $USER",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
